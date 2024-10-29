@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./home/page";
-import Contact from "./contact/page";
+import Home from "./home/Page";
+import Contact from "./contact/Page";
 import Navbar from "./component/common/Navbar";
 import Footer from "./component/common/Footer";
-import About from "./about/page";
-import Service from "./service/page";
+import About from "./about/Page";
+import Service from "./service/Page";
 
 const App = () => {
   return (
