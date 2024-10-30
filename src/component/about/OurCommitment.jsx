@@ -17,7 +17,7 @@ const OurCommitment = () => {
       </p>
       <img
         src={CommitmentImg}
-        className="w-4/6 h-full"
+        className="w-full sm:w-4/6 h-full"
         alt="our commitment image"
       />
     </div>
