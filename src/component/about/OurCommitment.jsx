@@ -3,7 +3,7 @@ import CommitmentImg from "../../assets/about/our-commitment.png";
 
 const OurCommitment = () => {
   return (
-    <div className="flex flex-col gap-20 md:px-9 mb-20  items-center text-center  ">
+    <div className="flex flex-col gap-10 lg:gap-20 md:px-9 mb-20 px-10  items-center text-center  ">
       <h1 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-5xl">
         Our Commitment to You
       </h1>

@@ -8,7 +8,7 @@ const Hero = ({ title }) => {
   return (
     <div className="w-full h-screen bg-gray-400  relative">
       <img
-        className={`absolute w-full   ${
+        className={`absolute  top-0 left-0 w-full  object-cover z-0   ${
           location.pathname === "/" ? null : "h-full"
         } z-0 object-cover`}
         src={hero}
