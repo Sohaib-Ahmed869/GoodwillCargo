@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import home from "../../assets/navbar/home.png";
 import contact from "../../assets/navbar/contact.png";
@@ -11,10 +11,24 @@ import { ImCross } from "react-icons/im";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  const navbarRef = useRef(null);
 
   const handleToggle = () => {
     setOpen(!open);
   };
+
+  // Close the navbar when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [navbarRef]);
 
   return (
     <div className="absolute z-20 flex justify-between items-center w-full h-44 px-12 xl:px-24">
@@ -83,10 +97,12 @@ const Navbar = () => {
         </div>
 
         {/* Hamburger menu for mobile */}
-        <div className="lg:hidden ">
-          {open ? (
-            null
-          ) : (
+        <div
+          className={`lg:hidden  transition-opacity mr-0 duration-500 ease-in-out ${
+            open ? "opacity-0 pointer-events-none" : "opacity-100"
+          }`}
+        >
+          {!open && (
             <GiHamburgerMenu
               onClick={handleToggle}
               className="text-white text-2xl z-40"
@@ -97,14 +113,12 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       <div
-        className={`fixed top-0 -right-0 w-1/4 pt-20 h-screen shadow-2xl bg-primary bg-opacity-50 flex flex-col items-center lg:hidden transition-all duration-500 ease-in-out ${
+        ref={navbarRef}
+        className={`fixed top-0 right-0 w-1/4 pt-20 h-screen shadow-2xl bg-primary bg-opacity-50 flex flex-col items-center lg:hidden transition-all duration-500 ease-in-out ${
           open ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         }`}
       >
-         <ImCross
-              onClick={handleToggle}
-              className="text-white text-2xl z-40"
-            />
+        <ImCross onClick={handleToggle} className="text-white text-2xl z-40" />
         <Link to="/" onClick={() => setOpen(false)}>
           <img
             src={home}
