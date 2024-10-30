@@ -14,8 +14,8 @@ const Navbar = () => {
       {/* left part of  navbar  */}
       <div className="text-white">
         <Link to="/">
-          <h1 className="text-xl xl:text-3xl font-semibold">Goodwill Cargo</h1>
-          <p className="text-[.3rem] xl:text-[.5rem] tracking-[2.4px]">
+          <h1 className="text-xl xl:text-2xl font-semibold">Goodwill Cargo</h1>
+          <p className="text-[.3rem] xl:text-[.4rem] tracking-[2.4px]">
             CLEARING AND FORWARDING CO. LLC
           </p>
         </Link>
@@ -33,28 +33,28 @@ const Navbar = () => {
         <Link to="/">
           <img
             src={home}
-            className="w-9 xl:w-16 hover:scale-110 transition-transform duration-200"
+            className="w-9 xl:w-12 hover:scale-110 transition-transform duration-200"
             alt="home-navbar-icon"
           />
         </Link>
         <Link to="/about">
           <img
             src={about}
-            className="w-9 xl:w-16 hover:scale-110 transition-transform duration-200"
+            className="w-9 xl:w-12 hover:scale-110 transition-transform duration-200"
             alt="about-navbar-icon"
           />
         </Link>
         <Link to="/service">
           <img
             src={services}
-            className="w-9 xl:w-16 hover:scale-110 transition-transform duration-200"
+            className="w-9 xl:w-12 hover:scale-110 transition-transform duration-200"
             alt="services-navbar-icon"
           />
         </Link>
         <Link to="/contact">
           <img
             src={contact}
-            className="w-9 xl:w-16 hover:scale-110 transition-transform duration-200"
+            className="w-9 xl:w-12 hover:scale-110 transition-transform duration-200"
             alt="contact-navbar-icon"
           />
         </Link>
@@ -67,9 +67,9 @@ const Navbar = () => {
           location.pathname === "/contact"
             ? "border-primary border-opacity-100 border-2  "
             : "border-white border-opacity-30 "
-        } border-opacity-30 px-6 xl:px-9 py-3 xl:py-5 rounded-2xl gap-2 hover:scale-110 transition-transform duration-200 cursor-pointer`}
+        } border-opacity-30 px-6 xl:px-6 py-3 xl:py-4 rounded-2xl gap-2 hover:scale-110 transition-transform duration-200 cursor-pointer`}
       >
-        <h1 className="text-white tracking-wider text-md xl:text-2xl">Call Now</h1>
+        <h1 className="text-white tracking-wider text-md xl:text-xl">Call Now</h1>
         <img src={callNow} className="" alt="call now icon" />
       </div>
     </div>
