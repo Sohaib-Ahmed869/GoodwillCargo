@@ -14,7 +14,7 @@ const Choose = () => {
         {/* card container */}
         <div className="flex flex-wrap items-center justify-center w-3/4 gap-16 ">
           {/* card 1 */}
-          <div className=" bg-[#F4F6FA] w-[49rem] rounded-3xl flex">
+          <div className=" bg-[#F4F6FA] w-[50rem] h-[26rem] rounded-3xl flex">
             <span className="p-7 flex flex-col gap-10 w-2/4">
               <h1 className="text-4xl font-medium">Leading Since 1976</h1>
               <p className="text-xl">
@@ -28,7 +28,7 @@ const Choose = () => {
             </div>
           </div>
           {/* card 2 */}
-          <div className="p- bg-[#F4F6FA] w-[49rem]  rounded-3xl flex">
+          <div className="p- bg-[#F4F6FA] w-[50rem] h-[26rem]  rounded-3xl flex">
             <span className="p-7 flex flex-col gap-10 w-2/4">
               <h1 className="text-4xl font-medium">Clear Pricing, No Hidden Fees</h1>
               <p className="text-xl">
@@ -42,7 +42,7 @@ const Choose = () => {
             </div>
           </div>
           {/* card 3 */}
-          <div className=" bg-[#F4F6FA] w-[49rem]  rounded-3xl flex">
+          <div className=" bg-[#F4F6FA] w-[50rem] h-[26rem]  rounded-3xl flex">
             <span className="p-7 flex flex-col gap-10 w-2/4">
               <h1 className="text-4xl font-medium">Global Reach</h1>
               <p className="text-xl">
@@ -56,7 +56,7 @@ const Choose = () => {
             </div>
           </div>
           {/* card 4 */}
-          <div className=" bg-[#F4F6FA] w-[49rem]  rounded-3xl flex">
+          <div className=" bg-[#F4F6FA] w-[50rem] h-[26rem]  rounded-3xl flex">
             <span className=" p-7 flex flex-col gap-10 w-2/4">
               <h1 className="text-4xl font-medium">Hassle-Free Customs Clearance</h1>
               <p className="text-xl">
