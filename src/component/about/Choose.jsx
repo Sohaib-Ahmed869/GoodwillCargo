@@ -33,11 +33,11 @@ const chooseData = [
 
 const Choose = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-20">
-      <h1 className="text-3xl ml-20 md:text-4xl xl:text-5xl 2xl:text-5xl">
+    <div className="flex flex-col items-center justify-center py-20 ">
+      <h1 className="text-3xl   md:text-4xl xl:text-5xl 2xl:text-5xl">
         Why Choose Us?
       </h1>
-      <div className="flex items-center justify-center py-20">
+      <div className="flex items-center justify-center  py-20">
         <div className="flex flex-wrap  items-center justify-center w-full px-5 gap-10">
           {chooseData.map((item, index) => (
             <div
