@@ -26,7 +26,7 @@ const ServicesCardData = [
 const ServicesCard = () => {
   return (
     <div className="flex items-center justify-center flex-col">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl font-medium my-10 sm:my-20 w-5/6 xl:w-5/6 text-center leading-normal">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium my-10 sm:my-20 w-5/6 xl:w-5/6 text-center leading-normal">
         Clear pricing, no hidden fees just straightforward, reliable logistics.
       </h1>
 

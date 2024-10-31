@@ -53,28 +53,28 @@ const Navbar = () => {
         <Link to="/">
           <img
             src={home}
-            className="w-9 xl:w-12 hover:scale-110 transition-transform duration-200"
+            className="xl:w-10 2xl:w-12 hover:scale-110 transition-transform duration-200"
             alt="home-navbar-icon"
           />
         </Link>
         <Link to="/about">
           <img
             src={about}
-            className="w-9 xl:w-12 hover:scale-110 transition-transform duration-200"
+            className="xl:w-10 2xl:w-12 hover:scale-110 transition-transform duration-200"
             alt="about-navbar-icon"
           />
         </Link>
         <Link to="/service">
           <img
             src={services}
-            className="w-9 xl:w-12 hover:scale-110 transition-transform duration-200"
+            className="xl:w-10 2xl:w-12 hover:scale-110 transition-transform duration-200"
             alt="services-navbar-icon"
           />
         </Link>
         <Link to="/contact">
           <img
             src={contact}
-            className="w-9 xl:w-12 hover:scale-110 transition-transform duration-200"
+            className="xl:w-10 2xl:w-12 hover:scale-110 transition-transform duration-200"
             alt="contact-navbar-icon"
           />
         </Link>
@@ -91,7 +91,7 @@ const Navbar = () => {
                 : "border-primary border-opacity-100 border-2"
             } px-6 xl:px-6 py-3 xl:py-4 rounded-2xl gap-2 hover:scale-110 transition-transform duration-200 cursor-pointer`}
           >
-            <h1 className="text-white tracking-wider text-md xl:text-xl">
+            <h1 className="text-white tracking-wider text-md 2xl:text-xl">
               Call Now
             </h1>
             <img src={callNow} alt="call now icon" />

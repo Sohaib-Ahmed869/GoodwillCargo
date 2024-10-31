@@ -19,7 +19,7 @@ const Hero = ({ title }) => {
               <p className="font-semibold text-base md:text-xl text-center xl:text-2xl 2xl:text-2xl">
                 Mastering Dubai's Trade Routes with Hassle-Free Clearance
               </p>
-              <h1 className="font-semibold text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl w-4/5 2xl:w-3/6 text-center !leading-normal">
+              <h1 className="font-semibold text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl w-4/5 2xl:w-3/6 text-center !leading-normal">
                 {title}
               </h1>
               {location.pathname === "/" && (
