@@ -47,8 +47,8 @@ const Choose = () => {
               <span className="p-7  flex flex-col gap-10 w-full">
                 <h1 className="text-2xl font-bold">{item.title}</h1>
               </span>
-              <div className="pl-7  w-full flex">
-                <p className="text-base md:text-lg">{item.description}</p>
+              <div className="pl-7   w-full flex">
+                <p className="text-base pb-3 md:text-lg">{item.description}</p>
                 <img
                   src={item.image}
                   className="w-1/2 sm:w-52  sm:h-52 md:w-full md:h-full"

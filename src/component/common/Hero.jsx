@@ -32,7 +32,11 @@ const Hero = ({ title }) => {
               </p>
               <button className="bg-white bg-opacity-30 2xl:bg-opacity-10 hover:bg-opacity-35 hover:scale-105 transition-transform duration-500 flex items-center justify-center gap-2 rounded-full text-white py-4 2xl:py-5 text-lg xl:text-2xl px-4 2xl:px-8">
                 <p className="text-base md:text-xl 2xl:text-2xl">Get Started</p>
-                <img src={GetStarted} className="w-4 2xl:w-5" alt="get started image" />
+                <img
+                  src={GetStarted}
+                  className="w-4 2xl:w-5"
+                  alt="get started image"
+                />
               </button>
             </>
           )}
