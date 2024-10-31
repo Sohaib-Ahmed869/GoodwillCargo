@@ -49,7 +49,7 @@ const Hero = ({ title }) => {
         <div className="bg-gradient-to-b from-[#795521] to-[#ec8f03]">
           <div className="relative flex flex-col items-center justify-center w-full h-[80vh]">
             <div className="flex items-center justify-center flex-col gap-5">
-              <p className="font-semibold text-base md:text-xl text-[#525252] text-center xl:text-2xl 2xl:text-2xl">
+              <p className="font-semibold text-base md:text-xl text-[#525252] text-center xl:text-2xl 2xl:text-2xl px-4">
                 Mastering Dubai's Trade Routes with Hassle-Free Clearance
               </p>
               <h1 className="font-semibold text-3xl   md:text-4xl xl:text-6xl 2xl:text-6xl w-full  text-center !leading-normal">
