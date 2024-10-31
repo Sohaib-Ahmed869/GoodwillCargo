@@ -11,6 +11,9 @@ export default {
         outfit: ["Outfit", "sans-serif"],
       },
     },
+    screens: {
+      vsm: "375px",
+    },
   },
   plugins: [],
 };

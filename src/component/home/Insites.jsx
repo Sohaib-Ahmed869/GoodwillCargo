@@ -1,14 +1,13 @@
 import React from "react";
-import InsiteImage from "../../assets/home/insites-img.png";
 import AnimatedNumbers from "react-animated-numbers";
 import GlobeDelivery from "../common/GlobeDelivery";
 
 const Insites = () => {
   return (
     <div className="h-full w-full flex flex-col relative  xl:top-[20rem] 2xl:top-[47rem] mt-10 sm:mt-32 px-9 md:px-20 xl:px-32">
-      <div className="bg-[#EFEFEF] px-16 md:px-12 py-10 flex justify-between rounded-3xl">
-        <span className="text-center">
-          <h1 className=" items-center justify-center text-2xl sm:text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl mb-0 xl:mb-4 flex">
+      <div className="bg-[#EFEFEF] px-4 sm:px-16 md:px-12 py-10 flex flex-col vsm:flex-row  gap-5 vsm:gap-2 justify-between rounded-3xl">
+        <span className="text-center ">
+          <h1 className=" items-center  justify-center text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl mb-0 xl:mb-4 flex">
             <AnimatedNumbers
               animateToNumber={45}
               duration={2000}
@@ -19,12 +18,12 @@ const Insites = () => {
             />
             +
           </h1>
-          <p className="text-base sm:text-xl md:text-2xl xl:text-3xl 2xl:text-4xl ">
+          <p className="text-base sm:text-xl md:text-2xl   xl:text-3xl 2xl:text-4xl ">
             Years of experience
           </p>
         </span>
-        <span className="text-center">
-          <h1 className=" items-center justify-center text-2xl sm:text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl mb-0 xl:mb-4 flex">
+        <span className="text-center ">
+          <h1 className=" items-center  justify-center text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl mb-0 xl:mb-4 flex">
             <AnimatedNumbers
               animateToNumber={35900}
               duration={2000}
@@ -35,12 +34,12 @@ const Insites = () => {
             />
             +
           </h1>
-          <p className="text-base sm:text-xl md:text-2xl xl:text-3xl 2xl:text-4xl">
+          <p className="text-base sm:text-xl md:text-2xl   xl:text-3xl 2xl:text-4xl">
             Shipments Delivered
           </p>
         </span>
-        <span className="text-center">
-          <h1 className=" items-center justify-center text-2xl sm:text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl mb-0 xl:mb-4 flex">
+        <span className="text-center ">
+          <h1 className=" items-center  justify-center text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl mb-0 xl:mb-4 flex">
             <AnimatedNumbers
               animateToNumber={2.5}
               duration={2000}
@@ -51,7 +50,7 @@ const Insites = () => {
             />
             K+
           </h1>
-          <p className="text-base sm:text-xl md:text-2xl xl:text-3xl 2xl:text-4xl">
+          <p className="text-base sm:text-xl md:text-2xl   xl:text-3xl 2xl:text-4xl">
             Valued Customers
           </p>
         </span>

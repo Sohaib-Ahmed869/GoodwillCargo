@@ -16,7 +16,7 @@ const Hero = ({ title }) => {
           />
           <div className="relative top-20  xl:top-13   flex flex-col items-center justify-center w-full h-screen">
             <div className="flex items-center justify-center flex-col gap-5">
-              <p className="font-semibold text-base md:text-xl text-center xl:text-2xl 2xl:text-2xl">
+              <p className="font-semibold text-base md:text-xl text-center xl:text-2xl 2xl:text-2xl px-4 ">
                 Mastering Dubai's Trade Routes with Hassle-Free Clearance
               </p>
               <h1 className="font-semibold text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl w-4/5 2xl:w-3/6 text-center !leading-normal">
