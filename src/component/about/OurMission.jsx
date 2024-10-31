@@ -4,7 +4,7 @@ import OurMissionImg from "../../assets/about/our-mission.png";
 const OurMission = () => {
   return (
     <>
-      <h1 className="bg-primary text-2xl sm:text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl font-medium py-14 text-center">
+      <h1 className="bg-primary text-2xl sm:text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl font-medium px-5 py-14 text-center">
         From Dubai to the World, We Deliver
       </h1>
 

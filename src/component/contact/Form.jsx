@@ -11,7 +11,7 @@ const Form = () => {
         <div className="flex flex-col gap-8 xl:gap-10  w-5/6">
           <h1 className=" text-3xl xl:text-4xl font-medium">
             Contact Information
-          </h1>
+          </h1> 
           <span className="flex  justify-center    gap-4">
             <img src={phone} className="w-6 h-6   " alt="phone icon" />
             <p className="text-base  w-full  xl:text-lg">+1012 3456 789</p>

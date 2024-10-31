@@ -118,7 +118,7 @@ const Navbar = () => {
           open ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         }`}
       >
-        <ImCross onClick={handleToggle} className="text-white text-2xl z-40" />
+        <ImCross onClick={handleToggle} className="text-white text-2xl z-40 mb-5" />
         <Link to="/" onClick={() => setOpen(false)}>
           <img
             src={home}

@@ -8,14 +8,14 @@ const Hero = ({ title }) => {
   return (
     <div className="w-full h-screen bg-gray-400  relative">
       <img
-        className={`absolute  top-0 left-0 w-full  object-cover z-0   ${
-          location.pathname === "/" ? null : "h-full"
+        className={`absolute  top-0 left-0   object-cover z-0   ${
+          location.pathname === "/" ? "w-full min-h-screen " : "h-screen w-full  object-cover"
         } z-0 object-cover`}
         src={hero}
         alt="hero image"
       />
       <div className="relative flex flex-col items-center justify-center w-full h-screen">
-        <div className="flex items-center justify-center flex-col gap-5 ">
+        <div className="flex items-center justify-center flex-col gap-5 -mt-32 sm:mt-0">
           <p className="font-semibold text-base md:text-xl text-center xl:text-2xl 2xl:text-2xl">
             Mastering Dubai's Trade Routes with Hassle-Free Clearance
           </p>
@@ -47,3 +47,4 @@ const Hero = ({ title }) => {
 };
 
 export default Hero;
+
