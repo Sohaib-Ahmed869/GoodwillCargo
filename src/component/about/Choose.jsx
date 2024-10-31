@@ -51,7 +51,7 @@ const Choose = () => {
                 <p className="text-base md:text-lg">{item.description}</p>
                 <img
                   src={item.image}
-                  className="w-52 h-52 md:w-full md:h-full"
+                  className="w-1/2 sm:w-52  sm:h-52 md:w-full md:h-full"
                   alt={item.title}
                 />
               </div>
