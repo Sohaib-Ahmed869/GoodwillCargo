@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 const Hero = ({ title }) => {
   const location = useLocation();
   return (
-    <div className="w-full h-screen bg-red-400  relative">
+    <div className="w-full    relative">
       {location.pathname === "/" ? (
         <>
           <img
@@ -47,7 +47,7 @@ const Hero = ({ title }) => {
         </>
       ) : (
         <div className="bg-gradient-to-b from-[#795521] to-[#ec8f03]">
-          <div className="relative flex flex-col items-center justify-center w-full h-[80vh] xl:h-[60vh]">
+          <div className="relative flex flex-col items-center justify-center w-full h-[80vh]">
             <div className="flex items-center justify-center flex-col gap-5">
               <p className="font-semibold text-base md:text-xl text-[#525252] text-center xl:text-2xl 2xl:text-2xl">
                 Mastering Dubai's Trade Routes with Hassle-Free Clearance
