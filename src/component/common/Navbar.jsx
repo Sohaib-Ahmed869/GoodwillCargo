@@ -46,8 +46,8 @@ const Navbar = () => {
       <div
         className={`hidden lg:flex rounded-full items-center justify-center py-4 px-14 gap-14 ${
           location.pathname === "/"
-            ? "bg-white bg-opacity-10": "bg-primary bg-opacity-100"
-          
+            ? "bg-white bg-opacity-10"
+            : "bg-primary bg-opacity-100"
         } hover:bg-opacity-35 hover:scale-105 transition-transform duration-500`}
       >
         <Link to="/">
@@ -83,19 +83,19 @@ const Navbar = () => {
       {/* Right part of navbar with Call Now button and Hamburger */}
       <div className="flex items-center gap-4">
         {/* Call Now button */}
-        <Link to="tel:+97142628523" >
-        <div
-          className={`hidden lg:flex border ${
-            location.pathname === "/"
-              ? "border-white border-opacity-30":"border-primary border-opacity-100 border-2"
-              
-          } px-6 xl:px-6 py-3 xl:py-4 rounded-2xl gap-2 hover:scale-110 transition-transform duration-200 cursor-pointer`}
-        >
-          <h1 className="text-white tracking-wider text-md xl:text-xl">
-            Call Now
-          </h1>
-          <img src={callNow} alt="call now icon" />
-        </div>
+        <Link to="tel:+97142628523">
+          <div
+            className={`hidden lg:flex border ${
+              location.pathname === "/"
+                ? "border-white border-opacity-30"
+                : "border-primary border-opacity-100 border-2"
+            } px-6 xl:px-6 py-3 xl:py-4 rounded-2xl gap-2 hover:scale-110 transition-transform duration-200 cursor-pointer`}
+          >
+            <h1 className="text-white tracking-wider text-md xl:text-xl">
+              Call Now
+            </h1>
+            <img src={callNow} alt="call now icon" />
+          </div>
         </Link>
 
         {/* Hamburger menu for mobile */}
@@ -152,9 +152,11 @@ const Navbar = () => {
             alt="contact-navbar-icon"
           />
         </Link>
-        <div className="flex lg:hidden border border-white border-opacity-100 p-3 rounded-full gap-2 hover:scale-110 transition-transform duration-200 cursor-pointer">
-          <img src={callNow} className="w-7 " alt="call now icon" />
-        </div>
+        <Link to="tel:+97142628523">
+          <div className="flex lg:hidden border border-white border-opacity-100 p-3 rounded-full gap-2 hover:scale-110 transition-transform duration-200 cursor-pointer">
+            <img src={callNow} className="w-7 " alt="call now icon" />
+          </div>
+        </Link>
       </div>
     </div>
   );
