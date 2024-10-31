@@ -6,7 +6,7 @@ import Service4 from "../../assets/home/service4.png";
 
 const Services = () => {
   return (
-    <div className="h-full w-full relative top-[38rem]  ">
+    <div className="h-full w-full relative top-[38rem] ">
       <div>
         <h1 className="bg-primary text-2xl sm:text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl font-medium px-5 py-14 text-center">
           Leading Custom Clearance in Dubai Since 1976

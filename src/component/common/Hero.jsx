@@ -9,7 +9,7 @@ const Hero = ({ title }) => {
     <div className="w-full h-screen bg-gray-400  relative">
       <img
         className={`absolute  top-0 left-0   object-cover z-0   ${
-          location.pathname === "/" ? "w-full min-h-screen " : "h-screen w-full  object-cover"
+          location.pathname === "/" ? "w-full min-h-full " : "h-screen w-full  "
         } z-0 object-cover`}
         src={hero}
         alt="hero image"

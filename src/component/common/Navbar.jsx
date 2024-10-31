@@ -118,7 +118,10 @@ const Navbar = () => {
           open ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         }`}
       >
-        <ImCross onClick={handleToggle} className="text-white text-2xl z-40 mb-5" />
+        <ImCross
+          onClick={handleToggle}
+          className="text-white text-2xl z-40 mb-5"
+        />
         <Link to="/" onClick={() => setOpen(false)}>
           <img
             src={home}
@@ -147,6 +150,9 @@ const Navbar = () => {
             alt="contact-navbar-icon"
           />
         </Link>
+        <div className="flex lg:hidden border border-white border-opacity-100 p-3 rounded-full gap-2 hover:scale-110 transition-transform duration-200 cursor-pointer">
+          <img src={callNow} className="w-7 " alt="call now icon" />
+        </div>
       </div>
     </div>
   );
