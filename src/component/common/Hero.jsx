@@ -14,8 +14,8 @@ const Hero = ({ title }) => {
             src={hero}
             alt="hero image"
           />
-          <div className="relative flex flex-col items-center justify-center w-full h-screen">
-            <div className="flex items-center justify-center flex-col gap-5 -mt-32 sm:mt-0">
+          <div className="relative top-20  xl:top-13  flex flex-col items-center justify-center w-full h-screen">
+            <div className="flex items-center justify-center flex-col gap-5">
               <p className="font-semibold text-base md:text-xl text-center xl:text-2xl 2xl:text-2xl">
                 Mastering Dubai's Trade Routes with Hassle-Free Clearance
               </p>
@@ -47,12 +47,12 @@ const Hero = ({ title }) => {
         </>
       ) : (
         <div className="bg-gradient-to-b from-[#795521] to-[#ec8f03]">
-          <div className="relative flex flex-col items-center justify-center w-full h-[60vh]">
+          <div className="relative flex flex-col items-center justify-center w-full h-[80vh] xl:h-[60vh]">
             <div className="flex items-center justify-center flex-col gap-5">
               <p className="font-semibold text-base md:text-xl text-[#525252] text-center xl:text-2xl 2xl:text-2xl">
                 Mastering Dubai's Trade Routes with Hassle-Free Clearance
               </p>
-              <h1 className="font-semibold text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl w-4/5 2xl:w-3/6 text-center !leading-normal">
+              <h1 className="font-semibold text-3xl   md:text-4xl xl:text-6xl 2xl:text-6xl w-full  text-center !leading-normal">
                 {title}
               </h1>
               {location.pathname === "/" && (

@@ -4,7 +4,7 @@ import GlobeDelivery from '../component/common/GlobeDelivery'
 import ServicesCard from '../component/common/ServicesCard'
 
 const Page = () => {
-    const title  = "Our Servicec"
+    const title  = "Our Services"
   return (
     <div>
       <Hero title={title} />

@@ -9,7 +9,7 @@ const GlobeDelivery = () => {
       </h1>
       <img
         src={InsiteImage}
-        className="w-full lg:w-3/5"
+        className="w-full xl:w-3/5"
         alt="insites image"
       />
     </div>

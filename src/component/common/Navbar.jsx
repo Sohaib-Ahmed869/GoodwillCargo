@@ -83,6 +83,7 @@ const Navbar = () => {
       {/* Right part of navbar with Call Now button and Hamburger */}
       <div className="flex items-center gap-4">
         {/* Call Now button */}
+        <Link to="tel:+97142628523" >
         <div
           className={`hidden lg:flex border ${
             location.pathname === "/"
@@ -95,6 +96,7 @@ const Navbar = () => {
           </h1>
           <img src={callNow} alt="call now icon" />
         </div>
+        </Link>
 
         {/* Hamburger menu for mobile */}
         <div
