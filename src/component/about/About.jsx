@@ -4,9 +4,7 @@ import AboutImage from "../../assets/about/about.png";
 const About = () => {
   return (
     <>
-      <h1 className="bg-primary text-2xl sm:text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl font-medium px-5 py-14 text-center">
-        Leading Custom Clearance in Dubai Since 1976
-      </h1>
+     
       <div className="flex flex-col lg:flex-row  justify-between py-10 ">
         <div className=" flex   justify-center w-full   z-20 lg:w-3/4 flex-col gap-10  px-10 lg:pl-20 items-start ">
           <h1 className="text-3xl text-center lg:text-start w-full  md:text-4xl xl:text-5xl 2xl:text-5xl">

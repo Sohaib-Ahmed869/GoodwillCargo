@@ -45,9 +45,9 @@ const Navbar = () => {
       {/* Center part of navbar */}
       <div
         className={`hidden lg:flex rounded-full items-center justify-center py-4 px-14 gap-14 ${
-          location.pathname === "/contact"
-            ? "bg-primary bg-opacity-100"
-            : "bg-white bg-opacity-10"
+          location.pathname === "/"
+            ? "bg-white bg-opacity-10": "bg-primary bg-opacity-100"
+          
         } hover:bg-opacity-35 hover:scale-105 transition-transform duration-500`}
       >
         <Link to="/">
@@ -85,9 +85,9 @@ const Navbar = () => {
         {/* Call Now button */}
         <div
           className={`hidden lg:flex border ${
-            location.pathname === "/contact"
-              ? "border-primary border-opacity-100 border-2"
-              : "border-white border-opacity-30"
+            location.pathname === "/"
+              ? "border-white border-opacity-30":"border-primary border-opacity-100 border-2"
+              
           } px-6 xl:px-6 py-3 xl:py-4 rounded-2xl gap-2 hover:scale-110 transition-transform duration-200 cursor-pointer`}
         >
           <h1 className="text-white tracking-wider text-md xl:text-xl">

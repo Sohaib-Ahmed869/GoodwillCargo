@@ -1,7 +1,7 @@
 import React from "react";
 import location from "../../assets/contact/location.png";
 import phone from "../../assets/contact/phone-call.png";
-import email from "../../assets/contact/email.png";
+import agentCall from "../../assets/contact/direct-agent.png";
 
 const Form = () => {
   return (
@@ -14,16 +14,16 @@ const Form = () => {
           </h1> 
           <span className="flex  justify-center    gap-4">
             <img src={phone} className="w-6 h-6   " alt="phone icon" />
-            <p className="text-base  w-full  xl:text-lg">+1012 3456 789</p>
+            <p className="text-base  w-full  xl:text-lg">+97142628523</p>
           </span>
           <span className="flex  justify-center    gap-4">
-            <img src={email} className="w-6 h-6   " alt="email icon" />
-            <p className="text-base  w-full  xl:text-lg">demo@gmail.com</p>
+            <img src={agentCall} className="w-6 h-6   " alt="email icon" />
+            <p className="text-base  w-full  xl:text-lg">Direct Agent : +971-56-9584073 /  +971-56-2951575 </p>
           </span>
           <span className="flex  justify-center    gap-4">
             <img src={location} className=" h-6 w-6" alt="location icon" />
             <p className="text-base  w-full  xl:text-lg">
-              +132 Dartmouth Street Boston Massachusetts 02156 United State
+            Al Raihan, Al Mamzar Building - Office 222 - 20th St - Deira - Dubai
             </p>
           </span>
         </div>
