@@ -5,7 +5,7 @@ import GlobeDelivery from "../common/GlobeDelivery";
 
 const Insites = () => {
   return (
-    <div className="h-full w-full flex flex-col relative 2xl:top-[47rem] mt-10 sm:mt-32 px-9 md:px-20 xl:px-32">
+    <div className="h-full w-full flex flex-col relative  xl:top-[20rem] 2xl:top-[47rem] mt-10 sm:mt-32 px-9 md:px-20 xl:px-32">
       <div className="bg-[#EFEFEF] px-6 md:px-20 py-10 flex justify-between rounded-3xl">
         <span className="text-center">
           <h1 className=" items-center justify-center text-2xl sm:text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl mb-0 xl:mb-4 flex">
