@@ -44,7 +44,7 @@ const Navbar = () => {
 
       {/* Center part of navbar */}
       <div
-        className={`hidden lg:flex rounded-full items-center justify-center py-4 px-14 gap-14 ${
+        className={`hidden md:flex rounded-full items-center justify-center py-4 px-14 gap-14 ${
           location.pathname === "/"
             ? "bg-white bg-opacity-10"
             : "bg-primary bg-opacity-100"
