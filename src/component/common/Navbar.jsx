@@ -53,28 +53,28 @@ const Navbar = () => {
         <Link to="/">
           <img
             src={home}
-            className="xl:w-10 2xl:w-12 hover:scale-110 transition-transform duration-200"
+            className="w-9 xl:w-10 2xl:w-12 hover:scale-110 transition-transform duration-200"
             alt="home-navbar-icon"
           />
         </Link>
         <Link to="/about">
           <img
             src={about}
-            className="xl:w-10 2xl:w-12 hover:scale-110 transition-transform duration-200"
+            className="w-9 xl:w-10 2xl:w-12 hover:scale-110 transition-transform duration-200"
             alt="about-navbar-icon"
           />
         </Link>
         <Link to="/service">
           <img
             src={services}
-            className="xl:w-10 2xl:w-12 hover:scale-110 transition-transform duration-200"
+            className="w-9 xl:w-10 2xl:w-12 hover:scale-110 transition-transform duration-200"
             alt="services-navbar-icon"
           />
         </Link>
         <Link to="/contact">
           <img
             src={contact}
-            className="xl:w-10 2xl:w-12 hover:scale-110 transition-transform duration-200"
+            className="w-9 xl:w-10 2xl:w-12 hover:scale-110 transition-transform duration-200"
             alt="contact-navbar-icon"
           />
         </Link>
