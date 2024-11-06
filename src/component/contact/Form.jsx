@@ -1,7 +1,4 @@
 import React from "react";
-import location from "../../assets/contact/location.png";
-import phone from "../../assets/contact/phone-call.png";
-import agentCall from "../../assets/contact/direct-agent.png";
 import ContactImage from "../../assets/contact/contact-img.png";
 
 const Form = () => {
@@ -19,90 +16,86 @@ const Form = () => {
       </div>
 
       {/* right side  */}
-      <div className="w-full flex items-center  justify-center py-20 lg:py-10   lg:w-2/4 h-full">
+      <div className="w-full flex items-center  justify-center py-20 lg:py-10 px-10 lg:w-2/4 h-full">
         <form action="" className="flex flex-col w-full px-10 gap-4 xl:gap-8 ">
           <div className="w-full flex flex-wrap gap-y-3 xl:gap-y-8  gap-x-12 justify-between">
-            <div  className="flex flex-col lg:flex-row gap-10 w-full">
+            <div className="flex flex-col lg:flex-row gap-10 w-full">
+              {/* first name */}
+              <div className="flex flex-col w-full ">
+                <label
+                  className="text-[#8D8D8D] text-base xl:text-lg cursor-pointer"
+                  htmlFor="firstName"
+                >
+                  FirstName
+                </label>
+                <input
+                  className="border-b-2 outline-none w-full text-base xl:text-lg py-4 px-1"
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="John"
+                  required
+                  autoComplete="off"
+                />
+              </div>
 
-            
-            {/* first name */}
-            <div className="flex flex-col w-full ">
-              <label
-                className="text-[#8D8D8D] text-base xl:text-lg cursor-pointer"
-                htmlFor="firstName"
-              >
-                FirstName
-              </label>
-              <input
-                className="border-b-2 outline-none w-full text-base xl:text-lg py-4 px-1"
-                type="text"
-                name="firstName"
-                id="firstName"
-                placeholder="John"
-                required
-                autoComplete="off"
-              />
-            </div>
-
-            {/* last name */}
-            <div className="flex flex-col w-full ">
-              <label
-                className="text-base xl:text-lg cursor-pointer"
-                htmlFor="lastName"
-              >
-                LastName
-              </label>
-              <input
-                className="border-b-2 outline-none w-full text-base xl:text-lg py-4 px-1"
-                type="text"
-                name="lastName"
-                id="lastName"
-                placeholder="Doe"
-                required
-                autoComplete="off"
-              />
-            </div>
+              {/* last name */}
+              <div className="flex flex-col w-full ">
+                <label
+                  className="text-base xl:text-lg cursor-pointer"
+                  htmlFor="lastName"
+                >
+                  LastName
+                </label>
+                <input
+                  className="border-b-2 outline-none w-full text-base xl:text-lg py-4 px-1"
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  placeholder="Doe"
+                  required
+                  autoComplete="off"
+                />
+              </div>
             </div>
             <div className="flex flex-col lg:flex-row gap-10 w-full">
+              {/* email */}
+              <div className="flex flex-col w-full">
+                <label
+                  className="text-[#8D8D8D] text-base xl:text-lg cursor-pointer"
+                  htmlFor="email"
+                >
+                  Email
+                </label>
+                <input
+                  className="border-b-2 outline-none w-full text-base xl:text-lg py-4 px-1"
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="john@gmail.com"
+                  required
+                  autoComplete="off"
+                />
+              </div>
 
-            
-            {/* email */}
-            <div className="flex flex-col w-full">
-              <label
-                className="text-[#8D8D8D] text-base xl:text-lg cursor-pointer"
-                htmlFor="email"
-              >
-                Email
-              </label>
-              <input
-                className="border-b-2 outline-none w-full text-base xl:text-lg py-4 px-1"
-                type="text"
-                name="email"
-                id="email"
-                placeholder="john@gmail.com"
-                required
-                autoComplete="off"
-              />
-            </div>
-
-            {/* phone number */}
-            <div className="flex flex-col w-full">
-              <label
-                className="text-base xl:text-lg cursor-pointer"
-                htmlFor="phone"
-              >
-                Phone Number
-              </label>
-              <input
-                className="border-b-2 outline-none w-full text-base xl:text-lg py-4 px-1"
-                type="text"
-                name="phone"
-                id="phone"
-                placeholder="+1012 3456 789"
-                required
-                autoComplete="off"
-              />
-            </div>
+              {/* phone number */}
+              <div className="flex flex-col w-full">
+                <label
+                  className="text-base xl:text-lg cursor-pointer"
+                  htmlFor="phone"
+                >
+                  Phone Number
+                </label>
+                <input
+                  className="border-b-2 outline-none w-full text-base xl:text-lg py-4 px-1"
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="+1012 3456 789"
+                  required
+                  autoComplete="off"
+                />
+              </div>
             </div>
           </div>
 
