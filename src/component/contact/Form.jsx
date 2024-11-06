@@ -2,39 +2,31 @@ import React from "react";
 import location from "../../assets/contact/location.png";
 import phone from "../../assets/contact/phone-call.png";
 import agentCall from "../../assets/contact/direct-agent.png";
+import ContactImage from "../../assets/contact/contact-img.png";
 
 const Form = () => {
   return (
-    <div className={`w-full h-full relative flex flex-col md:flex-row`}>
+    <div className="w-full h-full relative flex flex-col lg:flex-row items-center py-10 lg:py-0 ">
       {/* left side  */}
-      <div className="bg-primary w-full lg:w-2/5   items-center  py-20  text-white flex flex-col  ">
-        <div className="flex flex-col gap-8 xl:gap-10  w-5/6">
-          <h1 className=" text-3xl xl:text-4xl font-medium">
-            Contact Information
-          </h1> 
-          <span className="flex  justify-center    gap-4">
-            <img src={phone} className="w-6 h-6   " alt="phone icon" />
-            <p className="text-base  w-full  xl:text-lg">+97142628523</p>
-          </span>
-          <span className="flex  justify-center    gap-4">
-            <img src={agentCall} className="w-6 h-6   " alt="email icon" />
-            <p className="text-base  w-full  xl:text-lg">Direct Agent : +971-56-9584073 /  +971-56-2951575 </p>
-          </span>
-          <span className="flex  justify-center    gap-4">
-            <img src={location} className=" h-6 w-6" alt="location icon" />
-            <p className="text-base  w-full  xl:text-lg">
-            Al Raihan, Al Mamzar Building - Office 222 - 20th St - Deira - Dubai
-            </p>
-          </span>
+      <div className="w-full lg:w-2/4 h-full hidden lg:flex items-center justify-center   text-white">
+        <div className="lg:w-full h-full flex justify-center items-center">
+          <img
+            src={ContactImage}
+            alt="contact form image"
+            className="w-full h-full rounded-xl lg:rounded-none object-cover"
+          />
         </div>
       </div>
 
       {/* right side  */}
-      <div className="  w-full flex items-center justify-center py-20   lg:w-3/5">
-        <form action="" className="flex flex-col w-5/6 gap-4  xl:gap-8 ">
-          <div className="w-full flex flex-wrap gap-y-3  xl:gap-y-8 gap-x-12  justify-between">
-            {/* first name  */}
-            <div className="flex flex-col w-full lg:w-96">
+      <div className="w-full flex items-center  justify-center py-20 lg:py-10   lg:w-2/4 h-full">
+        <form action="" className="flex flex-col w-full px-10 gap-4 xl:gap-8 ">
+          <div className="w-full flex flex-wrap gap-y-3 xl:gap-y-8  gap-x-12 justify-between">
+            <div  className="flex flex-col lg:flex-row gap-10 w-full">
+
+            
+            {/* first name */}
+            <div className="flex flex-col w-full ">
               <label
                 className="text-[#8D8D8D] text-base xl:text-lg cursor-pointer"
                 htmlFor="firstName"
@@ -52,8 +44,8 @@ const Form = () => {
               />
             </div>
 
-            {/* last name  */}
-            <div className="flex flex-col w-full lg:w-96">
+            {/* last name */}
+            <div className="flex flex-col w-full ">
               <label
                 className="text-base xl:text-lg cursor-pointer"
                 htmlFor="lastName"
@@ -70,9 +62,12 @@ const Form = () => {
                 autoComplete="off"
               />
             </div>
+            </div>
+            <div className="flex flex-col lg:flex-row gap-10 w-full">
 
-            {/* email  */}
-            <div className="flex flex-col w-full lg:w-96">
+            
+            {/* email */}
+            <div className="flex flex-col w-full">
               <label
                 className="text-[#8D8D8D] text-base xl:text-lg cursor-pointer"
                 htmlFor="email"
@@ -90,8 +85,8 @@ const Form = () => {
               />
             </div>
 
-            {/* phone number  */}
-            <div className="flex flex-col w-full lg:w-96">
+            {/* phone number */}
+            <div className="flex flex-col w-full">
               <label
                 className="text-base xl:text-lg cursor-pointer"
                 htmlFor="phone"
@@ -107,6 +102,7 @@ const Form = () => {
                 required
                 autoComplete="off"
               />
+            </div>
             </div>
           </div>
 
@@ -133,7 +129,7 @@ const Form = () => {
                   value="General Inquiry 2"
                   className="peer hidden"
                 />
-                <span className="w-5 h-5 border-2  bg-[#E0E0E0] border-[#E0E0E0] rounded-full peer-checked:bg-black peer-checked:after:content-['✓'] peer-checked:after:text-white peer-checked:after:block peer-checked:after:text-center peer-checked:after:leading-4 peer-checked:after:text-xs"></span>
+                <span className="w-5 h-5 border-2 bg-[#E0E0E0] border-[#E0E0E0] rounded-full peer-checked:bg-black peer-checked:after:content-['✓'] peer-checked:after:text-white peer-checked:after:block peer-checked:after:text-center peer-checked:after:leading-4 peer-checked:after:text-xs"></span>
                 General Inquiry 2
               </label>
               <label className="flex items-center text-base xl:text-lg gap-2">
@@ -153,13 +149,13 @@ const Form = () => {
                   value="General Inquiry 4"
                   className="peer hidden"
                 />
-                <span className="w-5 h-5 border-2  bg-[#E0E0E0] border-[#E0E0E0] rounded-full peer-checked:bg-black peer-checked:after:content-['✓'] peer-checked:after:text-white peer-checked:after:block peer-checked:after:text-center peer-checked:after:leading-4 peer-checked:after:text-xs"></span>
+                <span className="w-5 h-5 border-2 bg-[#E0E0E0] border-[#E0E0E0] rounded-full peer-checked:bg-black peer-checked:after:content-['✓'] peer-checked:after:text-white peer-checked:after:block peer-checked:after:text-center peer-checked:after:leading-4 peer-checked:after:text-xs"></span>
                 General Inquiry 4
               </label>
             </div>
           </div>
 
-          {/* message  */}
+          {/* message */}
           <div className="w-full">
             <label
               htmlFor="message"
@@ -168,7 +164,7 @@ const Form = () => {
               Message
             </label>
             <textarea
-              className="border-b-2 outline-none h-14 scroll-none text-base xl:text-lg w-full py-4 px-1 overflow-hidden "
+              className="border-b-2 outline-none h-14 scroll-none text-base xl:text-lg w-full py-4 px-1 overflow-hidden"
               name="message"
               id="message"
               placeholder="Write your message."
@@ -179,7 +175,7 @@ const Form = () => {
           <div className="w-full flex justify-end">
             <button
               type="submit"
-              className="bg-primary shadow-xl  xl:text-xl text-white py-3 xl:py-5 px-5 xl:px-10 rounded-lg"
+              className="bg-primary shadow-xl xl:text-xl text-white py-3 xl:py-5 px-5 xl:px-10 rounded-lg"
             >
               Send Message
             </button>

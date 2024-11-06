@@ -1,6 +1,29 @@
 import React from "react";
 
 import ServicesCard from "../common/ServicesCard";
+import Service1 from "../../assets/home/service1.png";
+import Service2 from "../../assets/home/service2.png";
+import Service3 from "../../assets/home/service3.png";
+import Service4 from "../../assets/home/service4.png";
+const ServicesCardData = [
+  {
+    img: Service1,
+    title: "Small Shipments Around the World",
+  },
+  {
+    img: Service2,
+    title: "Import & Export Via Air, Land & Sea",
+  },
+  {
+    img: Service3,
+    title: "Customs Clearance Without Any Hassell",
+  },
+  {
+    img: Service4,
+    title: "Local Delivery & Distribution ",
+  },
+];
+
 
 const Services = () => {
   return (
@@ -10,7 +33,7 @@ const Services = () => {
           Leading Custom Clearance in Dubai Since 1976
         </h1>
       
-          <ServicesCard />
+          <ServicesCard servicesData={ServicesCardData} />
       
     </div>
   );
