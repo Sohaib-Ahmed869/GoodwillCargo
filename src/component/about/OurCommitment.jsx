@@ -8,12 +8,13 @@ const OurCommitment = () => {
         Our Commitment to You
       </h1>
       <p className="text-base md:text-xl xl:text-2xl 2xl:text-2xl !leading-normal  w-full xl:w-5/6 text-[#525252] ">
-        From the moment your shipment is ready, until it reaches its final
-        destination, we are dedicated to providing you with exceptional service.
-        Our experienced team is available every step of the way, offering
-        personalized support and expertise to ensure your logistics and customs
-        clearance experience is as smooth as possible. Let us handle the details
-        so you can focus on what matters most—your business.
+        From Start to Finish, We&#39;ve Got You Covered From the Moment Your
+        Shipment Is Ready to Its Final Destination, We Are Committed to
+        Delivering Exceptional Service. Our Experienced Team Is With You Every
+        Step of the Way, Providing Personalized Support and Expert Guidance to
+        Ensure a Seamless Logistics and Customs Clearance Experience. Let Us
+        Take Care of the Details, So You Can Focus on What Matters Most , Your
+        Business.
       </p>
       <img
         src={CommitmentImg}

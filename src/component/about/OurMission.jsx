@@ -5,7 +5,7 @@ const OurMission = () => {
   return (
     <>
       <h1 className="bg-primary text-2xl sm:text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl font-medium px-5 py-14 text-center">
-        From Dubai to the World, We Deliver
+        To / From U.A.E to the World, We Deliver.
       </h1>
 
       <div className="flex flex-col lg:flex-row-reverse  justify-between py-10 ">
@@ -14,11 +14,11 @@ const OurMission = () => {
             Our Mission
           </h1>
           <p className="text-center lg:text-start text-base md:text-xl xl:text-2xl 2xl:text-2xl w-full xl:w-5/6 text-[#525252] !leading-normal">
-            Our mission is to simplify the complex world of logistics and
-            customs clearance for businesses and individuals alike. We are
-            committed to providing clear pricing, fast service, and dependable
-            support—ensuring that your goods are delivered on time and with no
-            hidden fees.
+            Our Mission is to Simplify the Complex World of Logistics and
+            Customs Clearance for Businesses and Individuals Alike. We Are
+            Dedicated to Offering Transparent Pricing, Fast and Reliable
+            Service, and Dependable Support , Ensuring That Your Goods Are
+            Delivered On Time, Without Delays or Hidden Fees.
           </p>
         </div>
         <div className=" hidden lg:flex justify-end h-full ">

@@ -4,7 +4,7 @@ import Services from "../component/home/Services";
 import Insides from "../component/home/Insites";
 
 const Page = () => {
-  const title = "From Doorstep to Destination, We've Got You Covered";
+  const title = "Seamless Import and Export Solutions, From Start to Finish";
   return (
     <>
       <Hero title={title} />

@@ -58,22 +58,22 @@ const Insites = () => {
 
       <div className="flex flex-col gap-10 md:px-9 my-10 sm:my-16 items-center text-center">
         <h1 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl">
-          Ensuring Timely Delivery With Utmost Professionalism
+          Simplifying Deliveries with Utmost Professionalism and Efficiency
         </h1>
-        <p
-          className="text-base md:text-xl xl:text-2xl 2xl:text-2xl !leading-normal  w-full text-[#525252]"
-          
-        >
-          We specialize in customs clearance, freight forwarding, and
-          transportation services. Our team expertly navigates customs
-          formalities and logistics, ensuring seamless import/export processes.
-          From air and sea freight to local distribution, we handle your
-          shipments with precision and care. With a commitment to transparency
-          and efficiency, we prioritize your business needs while ensuring your
-          goods reach their destination without delay.
+        <p className="text-base md:text-xl xl:text-2xl 2xl:text-2xl !leading-normal  w-full text-[#525252]">
+          We specialize in end-to-end logistics, including Customs Clearance,
+          Freight Forwarding, and Transportation Services. Our expert team
+          ensures seamless navigation of Customs Formalities, providing
+          efficient Import and Export solutions tailored to your business. From
+          Air and Sea Freight to Local Distribution, we handle every shipment
+          with Precision and Care. After Customs Clearance, we ensure the timely
+          delivery of Containers and Consignments to their final destinations,
+          offering a Comprehensive Service you can rely on. With Transparency,
+          Efficiency, and Professionalism at our core, we make Logistics
+          effortless, so you can focus on growing your business.
         </p>
       </div>
-     <GlobeDelivery />
+      <GlobeDelivery />
     </div>
   );
 };
