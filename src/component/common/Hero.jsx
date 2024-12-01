@@ -45,6 +45,9 @@ const Hero = ({ title }) => {
               )}
             </div>
           </div>
+          <h1 className="bg-primary text-2xl relative top-28 sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium py-14 text-center">
+        Leading Custom Clearance in Dubai Since 1976
+      </h1>
         </>
       ) : (
         <div className="bg-gradient-to-b from-[#795521] to-[#ec8f03]">

@@ -8,6 +8,7 @@ const Page = () => {
   return (
     <>
       <Hero title={title} />
+     
       <Services  />
       <Insides />
      

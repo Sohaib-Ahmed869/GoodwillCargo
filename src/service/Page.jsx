@@ -10,12 +10,12 @@ import Service5 from "../assets/services/service5.png";
 import Service6 from "../assets/services/service6.png";
 
 const ServicesCardData = [
-  {
-    img: Service1,
-    title: "Courier / Shipping Door to Door Service Worldwide",
-    description:
-      "Effortlessly Delivering Small Shipments Worldwide by Air With Precision and Reliability. We Offer Cost-Effective Solutions for Document Courier Services and Small Packages, Catering to Both Personal and Commercial Needs. With Complete Door-to-Door Service and Trusted Global Networks, We Ensure Timely, Secure, and Hassle-Free Deliveries You Can Rely On",
-  },
+  // {
+  //   img: Service1,
+  //   title: "Courier / Shipping Door to Door Service Worldwide",
+  //   description:
+  //     "Effortlessly Delivering Small Shipments Worldwide by Air With Precision and Reliability. We Offer Cost-Effective Solutions for Document Courier Services and Small Packages, Catering to Both Personal and Commercial Needs. With Complete Door-to-Door Service and Trusted Global Networks, We Ensure Timely, Secure, and Hassle-Free Deliveries You Can Rely On",
+  // },
   {
     img: Service3,
     title: "Customs Clearance",

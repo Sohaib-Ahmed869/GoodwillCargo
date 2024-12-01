@@ -5,15 +5,14 @@ import { Link } from "react-scroll";
 const Form = () => {
   return (
     <div className="w-full h-full relative flex flex-col  items-center py-10 lg:py-0 ">
-      <h1 className="text-3xl  flex flex-col gap-10 items-center justify-center  md:text-4xl xl:text-5xl 2xl:text-5xl mb-20">
+      <h1 className="text-3xl  flex flex-col gap-10 items-center justify-center text-center  md:text-4xl xl:text-5xl 2xl:text-5xl ">
         <span>What are you waiting for</span>
         <Link
-        to="Contact"
-        smooth={true}
-        duration={1000}
-
+          to="Contact"
+          smooth={true}
+          duration={1000}
           type="submit"
-          className="bg-primary cursor-pointer shadow-xl xl:text-xl text-white w-[14rem] py-3 xl:py-5 px-5 xl:px-10 rounded-lg"
+          className="bg-primary cursor-pointer shadow-xl text-center  text-white text-[1.3rem] md::w-[14rem] py-3 xl:py-5 px-5 xl:px-10 rounded-lg"
         >
           Contact us now
         </Link>
@@ -31,7 +30,7 @@ const Form = () => {
         </div>
 
         {/* right side  */}
-        <div className="w-full flex items-center  justify-center py-20 lg:py-10 px-10 lg:w-2/4 h-full">
+        <div className="w-full flex items-center  justify-center pb-10 lg:py-10 px-10 lg:w-2/4 h-full">
           <form
             action=""
             className="flex flex-col w-full px-10 gap-4 xl:gap-8 "
