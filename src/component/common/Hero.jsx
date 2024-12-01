@@ -10,11 +10,11 @@ const Hero = ({ title }) => {
       {location.pathname === "/" ? (
         <>
           <img
-            className="absolute  top-0 left-0  w-full min-h-full object-cover z-0  "
+            className="absolute  top-0 left-0  w-full h-screen object-cover z-0  "
             src={hero}
             alt="hero image"
           />
-          <div className="relative top-20  xl:top-13   flex flex-col items-center justify-center w-full h-screen">
+          <div className="relative top-20  xl:top-13 py-40  flex flex-col items-center justify-center w-full h-screen">
             <div className="flex items-center justify-center flex-col gap-5">
               <p className="font-semibold text-base md:text-xl text-center xl:text-2xl 2xl:text-2xl px-4 ">
                 Customs Clearance &amp; Shipping Made Easy To / From United Arab
@@ -45,9 +45,9 @@ const Hero = ({ title }) => {
               )}
             </div>
           </div>
-          <h1 className="bg-primary text-2xl relative top-28 sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium py-14 text-center">
-        Leading Custom Clearance in Dubai Since 1976
-      </h1>
+          <h1 className="bg-primary text-2xl relative   sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium py-14 text-center">
+            Leading Custom Clearance in Dubai Since 1976
+          </h1>
         </>
       ) : (
         <div className="bg-gradient-to-b from-[#795521] to-[#ec8f03]">

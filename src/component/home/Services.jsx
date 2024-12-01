@@ -26,7 +26,7 @@ const ServicesCardData = [
 
 const Services = () => {
   return (
-    <div className="h-full w-full relative top-40 ">
+    <div className="h-full w-full relative  ">
       {/* <h1 className="bg-primary text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium py-14 text-center">
         Leading Custom Clearance in Dubai Since 1976
       </h1> */}
