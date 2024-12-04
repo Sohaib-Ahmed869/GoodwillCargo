@@ -18,13 +18,13 @@ const ServicesCardData = [
   // },
   {
     img: Service3,
-    title: "Customs Clearance",
+    title: `Customs Clearance`,
     description:
       "Streamline Your Customs Clearance at Airports and Sea Ports With Our Professional Expertise. We Simplify Hassle-Free Clearance for Consignments, Including 20 and 40 Foot Containers. From Accurate Documentation to Timely Approvals, We Handle Every Detail With Precision, Allowing You to Focus on Your Business While Ensuring Smooth, Efficient Clearance.",
   },
   {
     img: Service4,
-    title: "Local Delivery & Distribution ",
+    title: "Local Delivery ",
     description:
       "Experience Reliable Local Delivery and Distribution Services Across the U.A.E. We Specialize in Efficient Movement of Goods, Whether Small Parcels or Large Consignments. With a Professional Team and Well-Organized Network, We Ensure Timely Deliveries to Businesses and Individuals, Offering Dependable and Hassle-Free Solutions for All Your Local Logistical Requirements.",
   },

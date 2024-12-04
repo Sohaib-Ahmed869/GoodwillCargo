@@ -17,7 +17,7 @@ const ServicesCard = ({ servicesData }) => {
         </h1>
       )}
       {/* services cards */}
-      <div className="flex flex-wrap max-sm:p-4 p-20  justify-center gap-2  w-full gap-x-20 gap-y-9 sm:gap-y-16 justify-items-center">
+      <div className="lg:flex lg:flex-wrap grid grid-cols-2 max-sm:p-4 p-20  justify-center gap-1  w-full lg:gap-x-20 gap-y-9 sm:gap-y-16 justify-items-center">
         {servicesData.map((service, index) => (
           <div
             key={index}
@@ -25,13 +25,13 @@ const ServicesCard = ({ servicesData }) => {
           >
             <img
               src={service.img}
-              className="w-[19rem] md:w-[24rem]  xl:w-[28rem] 2xl:w-[28rem]"
+              className="w-[10rem] md:w-[24rem]  xl:w-[28rem] 2xl:w-[28rem]"
               alt={`${service.title} image`}
             />
-            <p className="text-xl md:text-3xl mb-5  xl:text-4xl 2xl:text-4xl md:w-[20rem] 2xl:w-[30rem]  text-center">
+            <p className="text-lg md:text-3xl mb-5  xl:text-4xl 2xl:text-4xl md:w-[20rem] 2xl:w-[30rem]  text-center">
               {service.title}
             </p>
-            <p className="text-lg  max-sm:text-sm md:w-[28rem] -mt-5 text-center ">
+            <p className="text-md  max-sm:text-sm md:w-[28rem] -mt-5 text-center ">
               {service.description}
             </p>
           </div>
