@@ -1,6 +1,6 @@
 import React from "react";
 import ContactImage from "../../assets/contact/contact-img.png";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Form = () => {
   return (
@@ -8,10 +8,7 @@ const Form = () => {
       <h1 className="text-3xl  flex flex-col gap-10 items-center justify-center text-center  md:text-4xl xl:text-5xl 2xl:text-5xl ">
         <span>What are you waiting for</span>
         <Link
-          to="Contact"
-          smooth={true}
-          duration={1000}
-          type="submit"
+          to="tel:+97142628523"
           className="bg-primary cursor-pointer shadow-xl text-center  text-white text-[1.3rem] md::w-[14rem] py-3 xl:py-5 px-5 xl:px-10 rounded-lg"
         >
           Contact us now
