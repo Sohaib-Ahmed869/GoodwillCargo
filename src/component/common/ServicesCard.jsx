@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
+import { Plus, Minus } from "lucide-react";
 
 const ServicesCard = ({ servicesData }) => {
   const location = useLocation();
+  const [expandedServices, setExpandedServices] = useState({});
+
+  const toggleDescription = (index) => {
+    setExpandedServices((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
 
   return (
     <div className="flex items-center justify-center flex-col">
@@ -16,24 +25,48 @@ const ServicesCard = ({ servicesData }) => {
           Logistics.
         </h1>
       )}
-      {/* services cards */}
-      <div className="lg:flex lg:flex-wrap grid grid-cols-2 max-sm:p-4 p-20  justify-center gap-1  w-full lg:gap-x-20 gap-y-9 sm:gap-y-16 justify-items-center">
+      <div className="grid grid-cols-2 max-sm:p-4 p-20 justify-center gap-1 w-full lg:w-3/4 lg:gap-x-2 gap-y-9 sm:gap-y-16 justify-items-center">
         {servicesData.map((service, index) => (
           <div
             key={index}
-            className="flex gap-5  w-5/6 md:w-auto  items-center flex-col "
+            className="flex gap-5 w-5/6 md:w-auto items-center flex-col relative"
           >
             <img
               src={service.img}
-              className="w-[10rem] md:w-[24rem]  xl:w-[28rem] 2xl:w-[28rem]"
+              className="w-[10rem] md:w-[24rem] xl:w-[28rem] 2xl:w-[28rem]"
               alt={`${service.title} image`}
             />
-            <p className="text-lg md:text-3xl mb-5  xl:text-4xl 2xl:text-4xl md:w-[20rem] 2xl:w-[30rem]  text-center">
-              {service.title}
-            </p>
-            <p className="text-md  max-sm:text-sm md:w-[28rem] -mt-5 text-center ">
+            <div className="flex items-center">
+              <p className="text-lg md:text-3xl mb-5 xl:text-4xl 2xl:text-4xl  2xl:w-[30rem] text-center">
+                {service.title}
+              </p>
+              {service.description && (
+                <button
+                  onClick={() => toggleDescription(index)}
+                  className="hover:bg-gray-100 p-1 rounded-full transition-colors"
+                  aria-label={
+                    expandedServices[index]
+                      ? "Collapse description"
+                      : "Expand description"
+                  }
+                >
+                  {expandedServices[index] ? (
+                    <Minus className="w-6 h-6" />
+                  ) : (
+                    <Plus className="w-6 h-6" />
+                  )}
+                </button>
+              )}
+            </div>
+            <div
+              className={`text-md max-sm:text-sm md:w-[28rem] text-center transition-all duration-300 overflow-hidden ${
+                expandedServices[index]
+                  ? "max-h-96 opacity-100"
+                  : "max-h-0 opacity-0"
+              }`}
+            >
               {service.description}
-            </p>
+            </div>
           </div>
         ))}
       </div>

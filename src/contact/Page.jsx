@@ -48,8 +48,8 @@ const Page = () => {
   return (
     <div>
       <Hero title={title} />
-      {/* <Choose /> */}
-      <ServicesCard servicesData={ServicesCardData} />
+      <Choose />
+      {/* <ServicesCard servicesData={ServicesCardData} /> */}
       <ContactForm />
     </div>
   );

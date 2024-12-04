@@ -42,16 +42,17 @@ const Choose = () => {
           {chooseData.map((item, index) => (
             <div
               key={index}
-              className="bg-[#F4F6FA] w-full md:w-[40rem] h-full md:h-72 rounded-3xl flex flex-col"
+              className="bg-[#F4F6FA] w-full md:w-[40rem] md:h-60 rounded-3xl flex flex-col relative"
             >
               <span className="p-7  flex flex-col gap-10 w-full">
-                <h1 className="text-2xl font-bold">{item.title}</h1>
+                <h1 className="text-md lg:text-3xl font-semibold">
+                  {item.title}
+                </h1>
               </span>
-              <div className="pl-7   w-full flex">
-                <p className="text-base pb-3 md:text-lg">{item.description}</p>
+              <div className="pl-7   w-full flex ">
                 <img
                   src={item.image}
-                  className="w-1/2 sm:w-52  sm:h-52 md:w-full md:h-full"
+                  className="w-1/3 sm:w-52 h-20 sm:h-52 md:w-1/2 absolute right-0 bottom-0"
                   alt={item.title}
                 />
               </div>
