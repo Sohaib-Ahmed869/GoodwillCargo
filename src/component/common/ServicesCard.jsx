@@ -36,7 +36,7 @@ const ServicesCard = ({ servicesData }) => {
               className="w-[10rem] md:w-[24rem] xl:w-[28rem] 2xl:w-[28rem]"
               alt={`${service.title} image`}
             />
-            <div className="flex items-center">
+            <div className="flex items-start">
               <p className="text-lg md:text-3xl mb-5 xl:text-4xl 2xl:text-4xl  2xl:w-[30rem] text-center">
                 {service.title}
               </p>
@@ -51,9 +51,9 @@ const ServicesCard = ({ servicesData }) => {
                   }
                 >
                   {expandedServices[index] ? (
-                    <Minus className="w-6 h-6" />
+                    <Minus className="lg:w-6 lg:h-6 h-3 w-3" />
                   ) : (
-                    <Plus className="w-6 h-6" />
+                    <Plus className="lg:w-6 lg:h-6 h-3 w-3" />
                   )}
                 </button>
               )}

@@ -50,8 +50,8 @@ const Hero = ({ title }) => {
           </h1>
         </>
       ) : (
-        <div className="bg-gradient-to-b from-[#795521] to-[#ec8f03] dark:bg-gradient-to-b dark:from-[#795521] dark:to-[#ec8f03] dark:text-white w-full h-[50vh] lg:h-[80vh] flex items-center justify-center">
-          <div className="relative flex flex-col items-center justify-center w-full h-[50vh] lg:h-[80vh]">
+        <div className="bg-gradient-to-b from-[#795521] to-[#ec8f03] dark:bg-gradient-to-b dark:from-[#795521] dark:to-[#ec8f03] dark:text-white w-full h-[40vh] lg:h-[40vh] flex items-center justify-center">
+          <div className="relative flex flex-col items-center justify-center w-full mt-20 h-[40vh] lg:h-[40vh]">
             <div className="flex items-center justify-center flex-col gap-5">
               <p className="font-semibold text-base md:text-xl text-white text-center xl:text-2xl 2xl:text-2xl px-4">
                 Trusted Name in Customs Clearance and Logistics in Dubai Since
