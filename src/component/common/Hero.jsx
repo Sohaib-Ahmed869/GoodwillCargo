@@ -16,7 +16,7 @@ const Hero = ({ title }) => {
           />
           <div className="relative  xl:top-13  flex flex-col items-center lg:justify-center lg:top-0 top-36 w-full h-screen">
             <div className="flex items-center justify-center flex-col gap-2">
-              <p className="font-semibold text-base md:text-xl text-center xl:text-2xl 2xl:text-2xl px-4 ">
+              <p className="font-semibold text-base md:text-xl text-center xl:text-2xl 2xl:text-2xl px-4 mt-20">
                 Customs Clearance &amp; Shipping Made Easy To / From United Arab
                 Emirates (U.A.E) By Air &amp; Sea
               </p>
@@ -53,7 +53,7 @@ const Hero = ({ title }) => {
           </h1>
         </>
       ) : (
-        <div className="bg-gradient-to-b from-[#795521] to-[#ec8f03] dark:bg-gradient-to-b dark:from-[#795521] dark:to-[#ec8f03] dark:text-white w-full h-[40vh] lg:h-[40vh] flex items-center justify-center">
+        <div className="bg-gradient-to-b from-[#795521] to-[#ec8f03] dark:bg-gradient-to-b dark:from-[#795521] dark:to-[#ec8f03] dark:text-white w-full h-[40vh] lg:h-[60vh] flex items-center justify-center">
           <div className="relative flex flex-col items-center justify-center w-full mt-20 h-[40vh] lg:h-[40vh]">
             <div className="flex items-center justify-center flex-col gap-5">
               <p className="font-semibold text-base md:text-xl text-white text-center xl:text-2xl 2xl:text-2xl px-4">
