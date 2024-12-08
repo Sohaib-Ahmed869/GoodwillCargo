@@ -33,7 +33,7 @@ const chooseData = [
 
 const Choose = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-20 ">
+    <div className="flex flex-col items-center justify-center py-5 ">
       <h1 className="text-3xl   md:text-4xl xl:text-5xl 2xl:text-5xl">
         Why Choose Us?
       </h1>
@@ -42,7 +42,7 @@ const Choose = () => {
           {chooseData.map((item, index) => (
             <div
               key={index}
-              className="bg-[#F4F6FA] w-full md:w-[40rem] md:h-60 rounded-3xl flex flex-col relative"
+              className="bg-[#F4F6FA] w-full md:w-[25rem] xl:w-[40rem] md:h-60 rounded-3xl flex flex-col relative"
             >
               <span className="p-7  flex flex-col gap-10 w-full">
                 <h1 className="text-md lg:text-3xl font-semibold">
@@ -52,7 +52,7 @@ const Choose = () => {
               <div className="pl-7   w-full flex ">
                 <img
                   src={item.image}
-                  className="w-1/3 sm:w-52 h-20 sm:h-52 md:w-1/2 absolute right-0 bottom-0"
+                  className="w-1/3 sm:w-52 h-20 sm:h-52 md:w-2/3 xl:w-1/2 absolute right-0 bottom-0"
                   alt={item.title}
                 />
               </div>

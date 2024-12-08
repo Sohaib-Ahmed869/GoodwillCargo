@@ -59,7 +59,7 @@ const ServicesCard = ({ servicesData }) => {
               )}
             </div>
             <div
-              className={`text-md max-sm:text-sm md:w-[28rem] text-center transition-all duration-300 overflow-hidden ${
+              className={`text-md max-sm:text-sm md:w-[18rem] xl:w-[24rem] text-justify transition-all duration-300 overflow-hidden ${
                 expandedServices[index]
                   ? "max-h-96 opacity-100"
                   : "max-h-0 opacity-0"

@@ -10,11 +10,11 @@ const Hero = ({ title }) => {
       {location.pathname === "/" ? (
         <>
           <img
-            className="absolute  top-0 left-0  w-full object-left object-cover h-screen lg:object-top lg:object-cover   z-0 "
+            className="absolute  top-0 left-0  w-full object-top object-cover h-screen lg:object-top lg:object-cover   z-0 "
             src={hero}
             alt="hero image"
           />
-          <div className="relative  xl:top-13  flex flex-col items-center lg:justify-center lg:top-0 top-36 w-full h-screen">
+          <div className="relative  xl:top-13  flex flex-col items-center lg:justify-center lg:top-0 top-28 w-full h-screen">
             <div className="flex items-center justify-center flex-col gap-2">
               <p className="font-semibold text-base md:text-xl text-center xl:text-2xl 2xl:text-2xl px-4 mt-20">
                 Customs Clearance &amp; Shipping Made Easy To / From United Arab

@@ -60,7 +60,7 @@ const Insites = () => {
         <h1 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl">
           Simplifying Deliveries with Utmost Professionalism and Efficiency
         </h1>
-        <p className="text-base md:text-xl xl:text-2xl 2xl:text-2xl !leading-normal  w-full text-[#525252]">
+        <p className="text-base text-justify md:text-xl xl:text-2xl 2xl:text-2xl !leading-normal  w-full text-[#525252]">
           We specialize in end-to-end logistics, including Customs Clearance,
           Freight Forwarding, and Transportation Services. Our expert team
           ensures seamless navigation of Customs Formalities, providing

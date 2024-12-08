@@ -8,11 +8,12 @@ import Service3 from "../assets/services/service3.png";
 import Service4 from "../assets/services/service4.png";
 import Service5 from "../assets/services/service5.png";
 import Service6 from "../assets/services/service6.png";
+import { FaWhatsapp } from "react-icons/fa";
 
 const ServicesCardData = [
   {
     img: Service1,
-    title: "Courier / Shipping Door to Door Service Worldwide",
+    title: "Door to Door Service Worldwide",
     description:
       "Effortlessly Delivering Small Shipments Worldwide by Air With Precision and Reliability. We Offer Cost-Effective Solutions for Document Courier Services and Small Packages, Catering to Both Personal and Commercial Needs. With Complete Door-to-Door Service and Trusted Global Networks, We Ensure Timely, Secure, and Hassle-Free Deliveries You Can Rely On",
   },
@@ -49,6 +50,17 @@ const Page = () => {
       <Hero title={title} />
       <ServicesCard servicesData={ServicesCardData} />
       <GlobeDelivery />
+      
+      <div className="fixed bottom-5 right-5 z-50">
+        <a
+          href="https://wa.me/971504000000"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=" text-white p-3 rounded-full shadow-lg"
+        >
+          <FaWhatsapp className="text-5xl rounded-full p-2 bg-green-500" />
+        </a>
+      </div>
     </div>
   );
 };

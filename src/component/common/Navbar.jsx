@@ -36,7 +36,7 @@ const Navbar = () => {
       {/* Left part of navbar with logo */}
       <div className="text-white flex items-center">
         <Link to="/">
-          <img src={Logo} className="w-24 md:w-40" alt="logo" />
+          <img src={Logo} className="w-40 md:w-64" alt="logo" />
           {/* <h1 className="text-xl xl:text-2xl font-semibold">Goodwill Cargo</h1> */}
           {/* <p className="text-[.3rem] xl:text-[.4rem] tracking-[2.4px]">
             CLEARING AND FORWARDING CO. LLC
