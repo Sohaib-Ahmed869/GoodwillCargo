@@ -27,8 +27,8 @@ const Hero = ({ title }) => {
               {location.pathname === "/" && (
                 <>
                   <p
-                    className=" text-black  font-semibold sm:w-4/6 px-5 text-center text-base md:text-xl xl:text-2xl 2xl:text-2xl !leading-relaxed  p-2"
-                    style={{ textShadow: "2px 2px 2px rgba(255,255,255,1)" }}
+                    className=" text-black  font-semibold sm:w-4/6 px-5 text-center text-base md:text-xl xl:text-2xl 2xl:text-2xl !leading-relaxed  p-2 max-sm:text-white"
+                    style={{ textShadow: "2px 2px 2px rgba(0,0,0,0.4)" }}
                   >
                     Shipping made simple. From Air to Sea, we specialize in
                     delivering your Cargo on time and without Hassle. Trust us

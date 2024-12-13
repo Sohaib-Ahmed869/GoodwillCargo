@@ -50,7 +50,7 @@ const Page = () => {
       <Hero title={title} />
       <ServicesCard servicesData={ServicesCardData} />
       <GlobeDelivery />
-      
+
       <div className="fixed bottom-5 right-5 z-50">
         <a
           href="https://wa.me/+971569584073"
