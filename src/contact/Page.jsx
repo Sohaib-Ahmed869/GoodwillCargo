@@ -55,7 +55,7 @@ const Page = () => {
       
       <div className="fixed bottom-5 right-5 z-50">
         <a
-          href="https://wa.me/971504000000"
+          href="https://wa.me/+971569584073"
           target="_blank"
           rel="noopener noreferrer"
           className=" text-white p-3 rounded-full shadow-lg"

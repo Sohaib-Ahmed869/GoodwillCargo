@@ -1,6 +1,7 @@
 import React from "react";
 import hero from "../../assets/home/hero.png";
 import GetStarted from "../../assets/home/hero-getStarted.png";
+import herobg from "../../assets/about/hero-bg.png";
 import { useLocation } from "react-router-dom";
 
 const Hero = ({ title }) => {
@@ -53,7 +54,7 @@ const Hero = ({ title }) => {
           </h1>
         </>
       ) : (
-        <div className="bg-gradient-to-b from-[#795521] to-[#ec8f03] dark:bg-gradient-to-b dark:from-[#795521] dark:to-[#ec8f03] dark:text-white w-full h-[40vh] lg:h-[60vh] flex items-center justify-center">
+        <div className=" dark:text-white w-full h-[40vh] lg:h-[60vh] flex items-center justify-center" style={{backgroundImage: `url(${herobg})`, backgroundSize: "cover", backgroundPosition: "center"}}>
           <div className="relative flex flex-col items-center justify-center w-full mt-20 h-[40vh] lg:h-[40vh]">
             <div className="flex items-center justify-center flex-col gap-5">
               <p className="font-semibold text-base md:text-xl text-white text-center xl:text-2xl 2xl:text-2xl px-4">
