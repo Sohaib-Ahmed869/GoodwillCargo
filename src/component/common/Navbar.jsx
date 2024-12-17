@@ -125,7 +125,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       <div
         ref={navbarRef}
-        className={`fixed top-0 right-0 w-1/4 pt-20 h-screen shadow-2xl bg-primary bg-opacity-50 flex flex-col items-center lg:hidden transition-all duration-500 ease-in-out ${
+        className={`z-50 fixed top-0 right-0 w-1/4 pt-20 h-screen shadow-2xl bg-primary bg-opacity-50 flex flex-col items-center lg:hidden transition-all duration-500 ease-in-out ${
           open ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         }`}
       >

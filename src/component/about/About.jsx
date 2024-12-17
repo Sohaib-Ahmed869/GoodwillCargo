@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <div className="flex flex-col lg:flex-row  justify-between py-2 lg:py-10 ">
-        <div className=" flex   justify-center w-full   z-20 lg:w-3/4 flex-col gap-2 lg:gap-10  px-10 lg:pl-20 items-start ">
+        <div className=" flex   justify-center w-full lg:w-3/4 flex-col gap-2 lg:gap-10  px-10 lg:pl-20 items-start ">
           <h1 className="text-3xl text-center lg:text-start w-full  md:text-4xl xl:text-5xl 2xl:text-5xl">
             About Goodwill Cargo
           </h1>
@@ -22,7 +22,7 @@ const About = () => {
             Operations.
           </p>
         </div>
-        <div className="flex  lg:flex justify-end h-full mt-[-3rem] lg:mt-0">
+        <div className="flex lg:flex justify-end h-full mt-[-3rem] lg:mt-0">
           <img
             src={AboutImage}
             className="w-2/3 md:w-2/4 lg:w-[59rem]"
