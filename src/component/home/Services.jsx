@@ -1,7 +1,7 @@
 import React from "react";
 
 import ServicesCard from "../common/ServicesCard";
-import Service1 from "../../assets/home/service1.png";
+import Service1 from "../../assets/home/service1.jpg";
 import Service2 from "../../assets/home/service2.png";
 import Service3 from "../../assets/home/service3.png";
 import Service4 from "../../assets/home/service4.png";

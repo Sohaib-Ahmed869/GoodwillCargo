@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Form = () => {
   return (
-    <div className="w-full h-full relative flex flex-col  items-center py-10 lg:py-0 ">
+    <div className="w-full h-full relative flex flex-col  items-center py-2 lg:py-0 ">
       <h1 className="text-3xl  flex flex-col gap-10 items-center justify-center text-center  md:text-4xl xl:text-5xl 2xl:text-5xl ">
         <span>What are you waiting for</span>
         <Link
@@ -14,7 +14,7 @@ const Form = () => {
           Contact us now
         </Link>
       </h1>
-      <div id="Contact" className="flex flex-col lg:flex-row mt-20">
+      <div id="Contact" className="flex flex-col lg:flex-row mt-5 lg:mt-20">
         {/* left side  */}
         <div className="w-full lg:w-2/4 h-full hidden lg:flex items-center justify-center   text-white">
           <div className="lg:w-full h-full flex justify-center items-center">
@@ -27,10 +27,10 @@ const Form = () => {
         </div>
 
         {/* right side  */}
-        <div className="w-full flex items-center  justify-center pb-10 lg:py-10 px-10 lg:w-2/4 h-full">
+        <div className="w-full flex items-center  justify-center pb-20 lg:py-10 px-10 lg:w-2/4 h-full">
           <form
             action=""
-            className="flex flex-col w-full px-10 gap-4 xl:gap-8 "
+            className="flex flex-col w-full px-2 lg:px-10 gap-4 xl:gap-8 "
           >
             <div className="w-full flex flex-wrap gap-y-3 xl:gap-y-8  gap-x-12 justify-between">
               <div className="flex flex-col lg:flex-row gap-10 w-full">
@@ -40,7 +40,7 @@ const Form = () => {
                     className="text-[#8D8D8D] text-base xl:text-lg cursor-pointer"
                     htmlFor="firstName"
                   >
-                    FirstName
+                    FirstName <span className="text-red-500">*</span>
                   </label>
                   <input
                     className="border-b-2 outline-none w-full text-base xl:text-lg py-4 px-1"
@@ -59,7 +59,7 @@ const Form = () => {
                     className="text-base xl:text-lg cursor-pointer"
                     htmlFor="lastName"
                   >
-                    LastName
+                    LastName <span className="text-red-500">*</span>
                   </label>
                   <input
                     className="border-b-2 outline-none w-full text-base xl:text-lg py-4 px-1"
@@ -79,7 +79,7 @@ const Form = () => {
                     className="text-[#8D8D8D] text-base xl:text-lg cursor-pointer"
                     htmlFor="email"
                   >
-                    Email
+                    Email <span className="text-red-500">*</span>
                   </label>
                   <input
                     className="border-b-2 outline-none w-full text-base xl:text-lg py-4 px-1"
@@ -98,7 +98,7 @@ const Form = () => {
                     className="text-base xl:text-lg cursor-pointer"
                     htmlFor="phone"
                   >
-                    Phone Number
+                    Phone Number <span className="text-red-500">*</span>
                   </label>
                   <input
                     className="border-b-2 outline-none w-full text-base xl:text-lg py-4 px-1"
@@ -116,48 +116,48 @@ const Form = () => {
             {/* radio button for subject */}
             <div className="w-full xl:mt-8">
               <label className="block mb-4 text-base xl:text-lg font-semibold">
-                Select Subject?
+                Select Subject? <span className="text-red-500">*</span>
               </label>
               <div className="flex gap-5 xl:gap-10 flex-wrap">
                 <label className="flex items-center text-base xl:text-lg gap-2">
                   <input
                     type="radio"
                     name="subject"
-                    value="General Inquiry 1"
+                    value="Air"
                     className="peer hidden"
                   />
                   <span className="w-5 h-5 border-2 bg-[#E0E0E0] border-[#E0E0E0] rounded-full peer-checked:bg-black peer-checked:after:content-['✓'] peer-checked:after:text-white peer-checked:after:block peer-checked:after:text-center peer-checked:after:leading-4 peer-checked:after:text-xs"></span>
-                  General Inquiry 1
+                  Air
                 </label>
                 <label className="flex items-center text-base xl:text-lg gap-2">
                   <input
                     type="radio"
                     name="subject"
-                    value="General Inquiry 2"
+                    value="Sea"
                     className="peer hidden"
                   />
                   <span className="w-5 h-5 border-2 bg-[#E0E0E0] border-[#E0E0E0] rounded-full peer-checked:bg-black peer-checked:after:content-['✓'] peer-checked:after:text-white peer-checked:after:block peer-checked:after:text-center peer-checked:after:leading-4 peer-checked:after:text-xs"></span>
-                  General Inquiry 2
+                  Sea
                 </label>
                 <label className="flex items-center text-base xl:text-lg gap-2">
                   <input
                     type="radio"
                     name="subject"
-                    value="General Inquiry 3"
+                    value="Custom Clearance"
                     className="peer hidden"
                   />
                   <span className="w-5 h-5 border-2 bg-[#E0E0E0] border-[#E0E0E0] rounded-full peer-checked:bg-black peer-checked:after:content-['✓'] peer-checked:after:text-white peer-checked:after:block peer-checked:after:text-center peer-checked:after:leading-4 peer-checked:after:text-xs"></span>
-                  General Inquiry 3
+                  Custom Clearance
                 </label>
                 <label className="flex items-center text-base xl:text-lg gap-2">
                   <input
                     type="radio"
                     name="subject"
-                    value="General Inquiry 4"
+                    value="Personal and Company"
                     className="peer hidden"
                   />
                   <span className="w-5 h-5 border-2 bg-[#E0E0E0] border-[#E0E0E0] rounded-full peer-checked:bg-black peer-checked:after:content-['✓'] peer-checked:after:text-white peer-checked:after:block peer-checked:after:text-center peer-checked:after:leading-4 peer-checked:after:text-xs"></span>
-                  General Inquiry 4
+                  Personal and Company
                 </label>
               </div>
             </div>
@@ -168,7 +168,7 @@ const Form = () => {
                 htmlFor="message"
                 className="text-[#8D8D8D] text-base xl:text-lg cursor-pointer"
               >
-                Message
+                Message <span className="text-red-500">*</span>
               </label>
               <textarea
                 className="border-b-2 outline-none h-14 scroll-none text-base xl:text-lg w-full py-4 px-1 overflow-hidden"
@@ -178,6 +178,20 @@ const Form = () => {
                 required
                 autoComplete="off"
               ></textarea>
+            </div>
+            <div className="w-full">
+              <label
+                htmlFor="file"
+                className="text-[#8D8D8D] text-base xl:text-lg cursor-pointer"
+              >
+                Attach File
+              </label>
+              <input
+                type="file"
+                name="file"
+                id="file"
+                className="w-full py-4 px-1 text-base xl:text-lg"
+              />
             </div>
             <div className="w-full flex justify-end">
               <button

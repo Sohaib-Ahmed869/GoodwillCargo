@@ -32,7 +32,7 @@ const Navbar = () => {
   }, [navbarRef]);
 
   return (
-    <div className="absolute z-20 flex justify-between items-center w-full h-44 px-12 xl:px-24">
+    <div className="absolute z-20 flex justify-between items-center w-full h-24 lg:h-28 px-12 xl:px-24">
       {/* Left part of navbar with logo */}
       <div className="text-white flex items-center">
         <Link to="/">
@@ -102,10 +102,17 @@ const Navbar = () => {
 
         {/* Hamburger menu for mobile */}
         <div
-          className={`lg:hidden  transition-opacity mr-0 duration-500 ease-in-out ${
+          className={`lg:hidden  transition-opacity mr-0 duration-500 ease-in-out flex items-center gap-4 ${
             open ? "opacity-0 pointer-events-none" : "opacity-100"
           }`}
         >
+          {!open && (
+            <Link to="tel:+97142628523">
+              <div className="flex lg:hidden border border-white border-opacity-100 p-3 rounded-full gap-2 hover:scale-110 transition-transform duration-200 cursor-pointer">
+                <img src={callNow} className="w-4 " alt="call now icon" />
+              </div>
+            </Link>
+          )}
           {!open && (
             <GiHamburgerMenu
               onClick={handleToggle}
@@ -153,11 +160,6 @@ const Navbar = () => {
             className="w-9 xl:w-12 hover:scale-110 transition-transform duration-200 my-4"
             alt="contact-navbar-icon"
           />
-        </Link>
-        <Link to="tel:+97142628523">
-          <div className="flex lg:hidden border border-white border-opacity-100 p-3 rounded-full gap-2 hover:scale-110 transition-transform duration-200 cursor-pointer">
-            <img src={callNow} className="w-7 " alt="call now icon" />
-          </div>
         </Link>
       </div>
     </div>

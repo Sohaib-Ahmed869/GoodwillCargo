@@ -20,12 +20,12 @@ const ServicesCard = ({ servicesData }) => {
           Why Choose Us?
         </h1>
       ) : (
-        <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium mt-10 sm:mt-20 w-5/6 xl:w-5/6 text-center leading-normal">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium mt-2 sm:mt-20 w-5/6 xl:w-5/6 text-center leading-normal">
           Fair Pricing, Zero Surprises. Your Trusted Partner for Reliable
           Logistics.
         </h1>
       )}
-      <div className="grid grid-cols-2 max-sm:p-4 p-20 justify-center gap-1 w-full lg:w-3/4 lg:gap-x-4 gap-y-9 sm:gap-y-16 justify-items-center">
+      <div className="grid grid-cols-2 max-sm:p-4 p-20 justify-center w-full lg:w-3/4 lg:gap-x-4 gap-y-0 sm:gap-y-2 justify-items-center">
         {servicesData.map((service, index) => (
           <div
             key={index}

@@ -49,13 +49,13 @@ const Hero = ({ title }) => {
               )}
             </div>
           </div>
-          <h1 className="bg-primary text-2xl relative w-full sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium py-14 text-center">
+          <h1 className="bg-primary text-2xl relative w-full sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium py-2 lg:py-10 text-center">
             Leading Custom Clearance in Dubai Since 1976
           </h1>
         </>
       ) : (
-        <div className=" dark:text-white w-full h-[40vh] lg:h-[60vh] flex items-center justify-center" style={{backgroundImage: `url(${herobg})`, backgroundSize: "cover", backgroundPosition: "center"}}>
-          <div className="relative flex flex-col items-center justify-center w-full mt-20 h-[40vh] lg:h-[40vh]">
+        <div className=" dark:text-white w-full h-[28vh] lg:h-[60vh] flex items-center justify-center" style={{backgroundImage: `url(${herobg})`, backgroundSize: "cover", backgroundPosition: "center"}}>
+          <div className="relative flex flex-col items-center justify-center w-full mt-20 h-[28vh] lg:h-[40vh]">
             <div className="flex items-center justify-center flex-col gap-5">
               <p className="font-semibold text-base md:text-xl text-white text-center xl:text-2xl 2xl:text-2xl px-4">
                 Trusted Name in Customs Clearance and Logistics in Dubai Since

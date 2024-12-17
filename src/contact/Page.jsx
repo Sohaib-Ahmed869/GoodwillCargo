@@ -3,7 +3,7 @@ import Hero from "../component/common/Hero";
 import ContactForm from "../component/contact/Form";
 import Choose from "../component/about/Choose";
 import ServicesCard from "../component/common/ServicesCard";
-import Service1 from "../assets/services/service1.png";
+import Service1 from "../assets/services/service1.jpg";
 import Service2 from "../assets/services/service2.png";
 import Service3 from "../assets/services/service3.png";
 import Service4 from "../assets/services/service4.png";
