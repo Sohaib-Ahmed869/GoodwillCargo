@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <div className="absolute z-20 flex lg:justify-between justify-center items-center w-full h-24 lg:h-28 px-12 xl:px-24">
       {/* Left part of navbar with logo */}
-      <div className="text-white flex items-center justify-center">
+      <div className="text-white flex items-center justify-center"> 
         <Link to="/">
           {location.pathname === "/" ? (
             <img
@@ -50,10 +50,7 @@ const Navbar = () => {
               alt="logo"
             />
           )}
-          {/* <h1 className="text-xl xl:text-2xl font-semibold">Goodwill Cargo</h1> */}
-          {/* <p className="text-[.3rem] xl:text-[.4rem] tracking-[2.4px]">
-            CLEARING AND FORWARDING CO. LLC
-          </p> */}
+      
         </Link>
       </div>
 
