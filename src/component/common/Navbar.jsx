@@ -7,8 +7,8 @@ import services from "../../assets/navbar/service.png";
 import callNow from "../../assets/navbar/callNow.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
-import Logo from "../../assets/NavLogo.png";
-import Logo2 from "../../assets/NavLogo2.png";
+import Logo from "../../assets/navbar/NavLogo.png";
+import Logo2 from "../../assets/navbar/NavLogo2.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
