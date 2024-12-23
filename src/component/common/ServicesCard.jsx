@@ -25,7 +25,7 @@ const ServicesCard = ({ servicesData }) => {
           Logistics.
         </h1>
       )}
-      <div className="grid grid-cols-2 max-sm:p-4 p-20 justify-center w-full lg:w-3/4 lg:gap-x-4 gap-y-0 sm:gap-y-2 justify-items-center">
+      <div className="grid grid-cols-2 max-sm:p-4 justify-center w-full lg:w-3/4 lg:gap-x-4 gap-y-0 sm:gap-y-2 justify-items-center">
         {servicesData.map((service, index) => (
           <div
             key={index}
@@ -37,7 +37,7 @@ const ServicesCard = ({ servicesData }) => {
               alt={`${service.title} image`}
             />
             <div className="flex items-start">
-              <p className="text-lg md:text-3xl mb-5 md:w-[18rem] xl:text-4xl 2xl:text-4xl  2xl:w-[30rem] text-center">
+              <p className="text-lg md:text-3xl mb-0 md:w-[18rem] xl:text-4xl 2xl:text-4xl  2xl:w-[30rem] text-center">
                 {service.title}
               </p>
               {service.description && (

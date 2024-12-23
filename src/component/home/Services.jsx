@@ -32,6 +32,7 @@ const Services = () => {
       </h1> */}
 
       <ServicesCard servicesData={ServicesCardData} />
+      
     </div>
   );
 };

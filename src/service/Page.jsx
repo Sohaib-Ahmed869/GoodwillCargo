@@ -9,6 +9,9 @@ import Service4 from "../assets/services/service4.png";
 import Service5 from "../assets/services/service5.png";
 import Service6 from "../assets/services/service6.png";
 import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import callNow from "../assets/navbar/callNow.png";
+import { IoCall } from "react-icons/io5";
 
 const ServicesCardData = [
   {
@@ -61,6 +64,12 @@ const Page = () => {
           <FaWhatsapp className="text-5xl rounded-full p-2 bg-green-500" />
         </a>
       </div>
+
+      <Link to="tel:+97142628523" className="fixed bottom-11 left-5 z-50">
+        <div className="flex lg:hidden border-2 border-black text-black border-opacity-100 p-2 rounded-full gap-2 hover:scale-110 transition-transform duration-200 cursor-pointer">
+          <IoCall className="w-6 h-6 " />
+        </div>
+      </Link>
     </div>
   );
 };

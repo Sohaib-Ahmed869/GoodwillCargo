@@ -116,7 +116,7 @@ const Form = () => {
             {/* radio button for subject */}
             <div className="w-full xl:mt-8">
               <label className="block mb-4 text-base xl:text-lg font-semibold">
-                Select Subject? <span className="text-red-500">*</span>
+                Select Job Type <span className="text-red-500">*</span>
               </label>
               <div className="flex gap-5 xl:gap-10 flex-wrap">
                 <label className="flex items-center text-base xl:text-lg gap-2">
@@ -153,11 +153,21 @@ const Form = () => {
                   <input
                     type="radio"
                     name="subject"
-                    value="Personal and Company"
+                    value="Personal"
                     className="peer hidden"
                   />
                   <span className="w-5 h-5 border-2 bg-[#E0E0E0] border-[#E0E0E0] rounded-full peer-checked:bg-black peer-checked:after:content-['✓'] peer-checked:after:text-white peer-checked:after:block peer-checked:after:text-center peer-checked:after:leading-4 peer-checked:after:text-xs"></span>
-                  Personal and Company
+                  Personal
+                </label>
+                <label className="flex items-center text-base xl:text-lg gap-2">
+                  <input
+                    type="radio"
+                    name="subject"
+                    value="Company"
+                    className="peer hidden"
+                  />
+                  <span className="w-5 h-5 border-2 bg-[#E0E0E0] border-[#E0E0E0] rounded-full peer-checked:bg-black peer-checked:after:content-['✓'] peer-checked:after:text-white peer-checked:after:block peer-checked:after:text-center peer-checked:after:leading-4 peer-checked:after:text-xs"></span>
+                  Company
                 </label>
               </div>
             </div>

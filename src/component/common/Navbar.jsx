@@ -32,11 +32,11 @@ const Navbar = () => {
   }, [navbarRef]);
 
   return (
-    <div className="absolute z-20 flex justify-between items-center w-full h-24 lg:h-28 px-12 xl:px-24">
+    <div className="absolute z-20 flex lg:justify-between justify-center items-center w-full h-24 lg:h-28 px-12 xl:px-24">
       {/* Left part of navbar with logo */}
-      <div className="text-white flex items-center">
+      <div className="text-white flex items-center justify-center">
         <Link to="/">
-          <img src={Logo} className="w-40 md:w-64" alt="logo" />
+          <img src={Logo} className="w-56 md:w-64 justify-self-center" alt="logo" />
           {/* <h1 className="text-xl xl:text-2xl font-semibold">Goodwill Cargo</h1> */}
           {/* <p className="text-[.3rem] xl:text-[.4rem] tracking-[2.4px]">
             CLEARING AND FORWARDING CO. LLC
@@ -102,17 +102,17 @@ const Navbar = () => {
 
         {/* Hamburger menu for mobile */}
         <div
-          className={`lg:hidden  transition-opacity mr-0 duration-500 ease-in-out flex items-center gap-4 ${
+          className={`lg:hidden fixed right-4 transition-opacity mr-0 duration-500 ease-in-out flex items-center gap-4 ${
             open ? "opacity-0 pointer-events-none" : "opacity-100"
           }`}
         >
-          {!open && (
+          {/* {!open && (
             <Link to="tel:+97142628523">
               <div className="flex lg:hidden border border-white border-opacity-100 p-3 rounded-full gap-2 hover:scale-110 transition-transform duration-200 cursor-pointer">
                 <img src={callNow} className="w-4 " alt="call now icon" />
               </div>
             </Link>
-          )}
+          )} */}
           {!open && (
             <GiHamburgerMenu
               onClick={handleToggle}
