@@ -7,7 +7,8 @@ import services from "../../assets/navbar/service.png";
 import callNow from "../../assets/navbar/callNow.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
-import Logo from "../../assets/navLogo.png";
+import Logo from "../../assets/NavLogo.png";
+import Logo2 from "../../assets/NavLogo2.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -36,7 +37,19 @@ const Navbar = () => {
       {/* Left part of navbar with logo */}
       <div className="text-white flex items-center justify-center">
         <Link to="/">
-          <img src={Logo} className="w-56 md:w-64 justify-self-center" alt="logo" />
+          {location.pathname === "/" ? (
+            <img
+              src={Logo}
+              className="w-56 md:w-64 justify-self-center"
+              alt="logo"
+            />
+          ) : (
+            <img
+              src={Logo2}
+              className="w-56 md:w-64 justify-self-center"
+              alt="logo"
+            />
+          )}
           {/* <h1 className="text-xl xl:text-2xl font-semibold">Goodwill Cargo</h1> */}
           {/* <p className="text-[.3rem] xl:text-[.4rem] tracking-[2.4px]">
             CLEARING AND FORWARDING CO. LLC
