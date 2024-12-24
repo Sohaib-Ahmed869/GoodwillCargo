@@ -35,22 +35,14 @@ const Navbar = () => {
   return (
     <div className="absolute z-20 flex lg:justify-between justify-center items-center w-full h-24 lg:h-28 px-12 xl:px-24">
       {/* Left part of navbar with logo */}
-      <div className="text-white flex items-center justify-center"> 
+      <div className="text-white flex items-center justify-center">
         <Link to="/">
-          {location.pathname === "/" ? (
-            <img
-              src={Logo}
-              className="w-56 md:w-64 justify-self-center"
-              alt="logo"
-            />
-          ) : (
-            <img
-              src={Logo2}
-              className="w-56 md:w-64 justify-self-center"
-              alt="logo"
-            />
-          )}
-      
+          
+          <img
+            src={Logo2}
+            className="w-56 md:w-64 justify-self-center"
+            alt="logo"
+          />
         </Link>
       </div>
 
