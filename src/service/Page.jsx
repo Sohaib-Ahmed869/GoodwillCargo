@@ -66,7 +66,7 @@ const Page = () => {
       </div>
 
       <Link to="tel:+97142628523" className="fixed bottom-11 left-5 z-50">
-        <div className="flex lg:hidden border-2 border-black text-black border-opacity-100 p-2 rounded-full gap-2 hover:scale-110 transition-transform duration-200 cursor-pointer">
+        <div className="flex border-2 border-black text-black border-opacity-100 p-2 rounded-full gap-2 hover:scale-110 transition-transform duration-200 cursor-pointer">
           <IoCall className="w-6 h-6 " />
         </div>
       </Link>
