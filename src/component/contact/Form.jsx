@@ -1,6 +1,29 @@
 import React from "react";
 import ContactImage from "../../assets/contact/contact-img.png";
 import { Link } from "react-router-dom";
+import { BsTelephone } from "react-icons/bs";
+import { ImAddressBook } from "react-icons/im";
+import { User } from "lucide-react";
+
+const data = [
+  {
+    icon: <BsTelephone />,
+    title: "Phone",
+    value: "+97142628523",
+  },
+  {
+    icon: <ImAddressBook />,
+    title: "Address",
+    value:
+      "Al Raihan, Al Mamzar Building - Office 222 - 20th St - Deira - Dubai",
+  },
+  {
+    icon: <User />,
+    title: "Agent Contact",
+    value: "+971569584073",
+    value2: "+971562951575",
+  },
+];
 
 const Form = () => {
   return (
@@ -14,6 +37,50 @@ const Form = () => {
           Contact us now
         </Link>
       </h1>
+      <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-10 mt-2 lg:mt-9 p-10 lg:p-0">
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center gap-3"
+          >
+            <div className="w-20 h-20 text-xl lg:text-3xl bg-primary rounded-full flex items-center justify-center">
+              {item.icon}
+            </div>
+            <h1 className="text-xl xl:text-2xl 2xl:text-3xl font-semibold">
+              {item.title}
+            </h1>
+            <p className="text-center text-base xl:text-lg 2xl:text-xl">
+              {item.title === "Address" ? (
+                <a
+                  href="https://goo.gl/maps/9zQX5V1xQ7J2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black"
+                >
+                  {item.value}
+                </a>
+              ) : item.title === "Phone" ? (
+                <a href={`tel:${item.value}`} className="text-black">
+                  {item.value}
+                </a>
+              ) : (
+                <div className="flex flex-row gap-2">
+                  <a href={`tel:${item.value}`} className="text-black">
+                    {item.value}
+                  </a>
+                  /
+                  <a href={`tel:${item.value2}`} className="text-black">
+                    {item.value2}
+                  </a>
+                </div>
+              )}
+            </p>
+            {item.value2 && (
+              <p className="text-center text-base xl:text-lg 2xl:text-xl"></p>
+            )}
+          </div>
+        ))}
+      </div>
       <div id="Contact" className="flex flex-col lg:flex-row mt-5 lg:mt-20">
         {/* left side  */}
         <div className="w-full lg:w-2/4 h-full hidden lg:flex items-center justify-center   text-white">
@@ -148,26 +215,6 @@ const Form = () => {
                   />
                   <span className="w-5 h-5 border-2 bg-[#E0E0E0] border-[#E0E0E0] rounded-full peer-checked:bg-black peer-checked:after:content-['✓'] peer-checked:after:text-white peer-checked:after:block peer-checked:after:text-center peer-checked:after:leading-4 peer-checked:after:text-xs"></span>
                   Custom Clearance
-                </label>
-                <label className="flex items-center text-base xl:text-lg gap-2">
-                  <input
-                    type="radio"
-                    name="subject"
-                    value="Personal"
-                    className="peer hidden"
-                  />
-                  <span className="w-5 h-5 border-2 bg-[#E0E0E0] border-[#E0E0E0] rounded-full peer-checked:bg-black peer-checked:after:content-['✓'] peer-checked:after:text-white peer-checked:after:block peer-checked:after:text-center peer-checked:after:leading-4 peer-checked:after:text-xs"></span>
-                  Personal
-                </label>
-                <label className="flex items-center text-base xl:text-lg gap-2">
-                  <input
-                    type="radio"
-                    name="subject"
-                    value="Company"
-                    className="peer hidden"
-                  />
-                  <span className="w-5 h-5 border-2 bg-[#E0E0E0] border-[#E0E0E0] rounded-full peer-checked:bg-black peer-checked:after:content-['✓'] peer-checked:after:text-white peer-checked:after:block peer-checked:after:text-center peer-checked:after:leading-4 peer-checked:after:text-xs"></span>
-                  Company
                 </label>
               </div>
             </div>

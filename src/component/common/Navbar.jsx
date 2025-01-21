@@ -37,10 +37,9 @@ const Navbar = () => {
       {/* Left part of navbar with logo */}
       <div className="text-white flex items-center justify-center">
         <Link to="/">
-          
           <img
             src={Logo2}
-            className="w-56 md:w-64 justify-self-center"
+            className="w-56 md:w-64 justify-self-center filter drop-shadow-xl"
             alt="logo"
           />
         </Link>
