@@ -20,7 +20,7 @@ const ServicesCard = ({ servicesData }) => {
           Why Choose Us?
         </h1>
       ) : (
-        <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium mt-2 sm:mt-20 w-5/6 xl:w-5/6 text-center leading-normal">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-medium mt-2 mb-4 sm:mt-20 w-5/6 xl:w-5/6 text-center leading-normal">
           Fair Pricing, Zero Surprises. Your Trusted Partner for Reliable
           Logistics.
         </h1>
@@ -33,7 +33,7 @@ const ServicesCard = ({ servicesData }) => {
           >
             <img
               src={service.img}
-              className="w-[10rem] md:w-[18rem] xl:w-[28rem] 2xl:w-[28rem]"
+              className="w-[10rem] md:w-[18rem] xl:w-[28rem] 2xl:w-[28rem] rounded-3xl"
               alt={`${service.title} image`}
             />
             <div className="flex items-start">

@@ -4,24 +4,28 @@ import { Link } from "react-router-dom";
 import { BsTelephone } from "react-icons/bs";
 import { ImAddressBook } from "react-icons/im";
 import { User } from "lucide-react";
+import { MdEmail } from "react-icons/md";
 
 const data = [
   {
-    icon: <BsTelephone />,
-    title: "Phone",
-    value: "+97142628523",
+    icon: <MdEmail />,
+    title: "Email",
+    value: "operations@goodwillgroup.ae",
   },
   {
     icon: <ImAddressBook />,
-    title: "Address",
+    title: "Office",
     value:
       "Al Raihan, Al Mamzar Building - Office 222 - 20th St - Deira - Dubai",
   },
   {
     icon: <User />,
-    title: "Agent Contact",
+    title: "Sales",
     value: "+971569584073",
     value2: "+971562951575",
+    value3: "+971506448596",
+    value4: "+971506448524",
+    value5: "+971506446940",
   },
 ];
 
@@ -59,8 +63,8 @@ const Form = () => {
                 >
                   {item.value}
                 </a>
-              ) : item.title === "Phone" ? (
-                <a href={`tel:${item.value}`} className="text-black">
+              ) : item.title === "Email" ? (
+                <a href={`mailto:${item.value}`} className="text-black">
                   {item.value}
                 </a>
               ) : (

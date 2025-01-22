@@ -6,6 +6,7 @@ import Navbar from "./component/common/Navbar";
 import Footer from "./component/common/Footer";
 import About from "./about/Page";
 import Service from "./service/Page";
+import PrivacyPolicy from "./privacy-policy/page";
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/service" element={<Service />} />
         <Route path="/about" element={<About />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
       </Routes>
       <Footer />
     </div>
