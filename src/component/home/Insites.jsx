@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import AnimatedNumbers from "react-animated-numbers";
 import GlobeDelivery from "../common/GlobeDelivery";
 
 const Insites = () => {
+  const date = new Date(); 
+
+  // date.setDate(date.getDate() + 1);
+  //make some logic to convert date to number 10 weight to date, 20 to month, 30 to year
+  const [day, setDay] = useState(date.getDate());
+  const [month, setMonth] = useState(date.getMonth());
+  const [year, setYear] = useState(date.getFullYear());
+
+  const [dateNumber, setDateNumber] = useState(0);
+
+  useEffect(() => {
+    setDateNumber(day * 10 + month * 20 + year * 30);
+  }, [day, month, year]);
   return (
     <div className="h-full w-full flex flex-col relative   px-9 md:px-20 xl:px-32">
       <div className="bg-[#EFEFEF] px-4 sm:px-16 md:px-12 py-10 flex flex-col vsm:flex-row  gap-5 vsm:gap-2 justify-between rounded-3xl">
@@ -25,7 +38,7 @@ const Insites = () => {
         <span className="text-center ">
           <h1 className=" items-center  justify-center text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl mb-0 xl:mb-4 flex">
             <AnimatedNumbers
-              animateToNumber={35900}
+              animateToNumber={35900 + dateNumber}
               duration={2000}
               transitions={(index) => ({
                 type: "spring",

@@ -35,7 +35,7 @@ const Form = () => {
       <h1 className="text-3xl  flex flex-col gap-10 items-center justify-center text-center  md:text-4xl xl:text-5xl 2xl:text-5xl ">
         <span>What are you waiting for</span>
         <Link
-          to="tel:+97142628523"
+          to="tel:+971569584073"
           className="bg-primary cursor-pointer shadow-xl text-center  text-white text-[1.3rem] md::w-[14rem] py-3 xl:py-5 px-5 xl:px-10 rounded-lg"
         >
           Contact us now
@@ -54,7 +54,7 @@ const Form = () => {
               {item.title}
             </h1>
             <p className="text-center text-base xl:text-lg 2xl:text-xl">
-              {item.title === "Address" ? (
+              {item.title === "Office" ? (
                 <a
                   href="https://goo.gl/maps/9zQX5V1xQ7J2"
                   target="_blank"
@@ -68,13 +68,27 @@ const Form = () => {
                   {item.value}
                 </a>
               ) : (
-                <div className="flex flex-row gap-2">
-                  <a href={`tel:${item.value}`} className="text-black">
-                    {item.value}
-                  </a>
-                  /
-                  <a href={`tel:${item.value2}`} className="text-black">
-                    {item.value2}
+                <div className="flex flex-col gap-2">
+                  <div className="flex gap-2">
+                    <a href={`tel:${item.value}`} className="text-black">
+                      {item.value}
+                    </a>
+                    /
+                    <a href={`tel:${item.value2}`} className="text-black">
+                      {item.value2}
+                    </a>
+                  </div>
+                  <div className="flex gap-2">
+                    <a href={`tel:${item.value3}`} className="text-black">
+                      {item.value3}
+                    </a>
+                    /
+                    <a href={`tel:${item.value4}`} className="text-black">
+                      {item.value4}
+                    </a>
+                  </div>
+                  <a href={`tel:${item.value5}`} className="text-black">
+                    {item.value5}
                   </a>
                 </div>
               )}

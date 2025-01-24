@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import AboutImage from "../../assets/about/about.png";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import callNow from "../../assets/navbar/callNow.png";
 import { IoCall } from "react-icons/io5";
 
+const useViewport = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkViewport = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkViewport();
+    window.addEventListener("resize", checkViewport);
+
+    return () => window.removeEventListener("resize", checkViewport);
+  }, []);
+
+  return { isMobile };
+};
+
 const About = () => {
+  const { isMobile } = useViewport();
   return (
     <>
       <div className="flex flex-col lg:flex-row  justify-between py-2 lg:py-10 ">
@@ -45,9 +63,12 @@ const About = () => {
         </a>
       </div>
 
-      <Link to="tel:+97142628523" className="fixed bottom-11 left-5 z-50">
+      <Link
+        to={isMobile ? "tel:+971569584073" : "tel:+97142628523"}
+        className="fixed bottom-11 left-5 z-50"
+      >
         <div className="flex border-2 border-black text-black border-opacity-100 p-2 rounded-full gap-2 hover:scale-110 transition-transform duration-200 cursor-pointer">
-          <IoCall className="w-6 h-6 " />
+          <IoCall className="w-6 h-6" />
         </div>
       </Link>
     </>

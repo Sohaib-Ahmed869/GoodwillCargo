@@ -3,11 +3,14 @@ import hero from "../../assets/home/hero.png";
 import GetStarted from "../../assets/home/hero-getStarted.png";
 import herobg from "../../assets/about/hero-bg.png";
 import { useLocation } from "react-router-dom";
+import callNow from "../../assets/navbar/callNow.png";
+import { IoCall } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Hero = ({ title }) => {
   const location = useLocation();
   return (
-    <div className="w-full    relative">
+    <div className="w-full relative">
       {location.pathname === "/" ? (
         <>
           <img
@@ -16,6 +19,12 @@ const Hero = ({ title }) => {
             alt="hero image"
           />
           <div className="relative  xl:top-13  flex flex-col items-center lg:justify-center lg:top-0 top-28 w-full h-screen">
+            <Link to="tel:+971569584073">
+              <div className="lg:hidden bg-white bg-opacity-20 2xl:bg-opacity-10 hover:bg-opacity-35 hover:scale-105 transition-transform duration-500 flex items-center justify-center gap-2 rounded-full text-black py-4 2xl:py-5 text-lg xl:text-2xl px-4 2xl:px-8">
+                <p className="text-base font-bold md:text-xl 2xl:text-2xl">Call Now</p>
+                <IoCall className="w-4 h-4" />
+              </div>
+            </Link>
             <div className="flex items-center justify-center flex-col gap-2">
               <p className="font-semibold text-base md:text-xl text-center xl:text-2xl 2xl:text-2xl px-4 mt-20">
                 Customs Clearance &amp; Shipping Made Easy To / From United Arab
@@ -54,7 +63,14 @@ const Hero = ({ title }) => {
           </h1>
         </>
       ) : (
-        <div className=" dark:text-white w-full h-[28vh] lg:h-[60vh] flex items-center justify-center" style={{backgroundImage: `url(${herobg})`, backgroundSize: "cover", backgroundPosition: "center"}}>
+        <div
+          className=" dark:text-white w-full h-[28vh] lg:h-[60vh] flex items-center justify-center"
+          style={{
+            backgroundImage: `url(${herobg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
           <div className="relative flex flex-col items-center justify-center w-full mt-20 h-[28vh] lg:h-[40vh]">
             <div className="flex items-center justify-center flex-col gap-5">
               <p className="font-semibold text-base md:text-xl text-white text-center xl:text-2xl 2xl:text-2xl px-4">
